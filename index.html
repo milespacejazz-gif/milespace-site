@@ -1,0 +1,1021 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Songti TC'; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Songti TC'; -webkit-text-stroke: #000000; min-height: 17.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="zh-TW"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;MileSpace｜爵士現場 × 商演策劃&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- Icons --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- Fonts --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&amp;family=Playfair+Display:wght@400;600&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>:root{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--bg:#070707;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--bg2:#0b0b0b;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--text:#f6f6f6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--muted:rgba(246,246,246,.72);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--muted2:rgba(246,246,246,.55);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--line:rgba(255,255,255,.10);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--glass:rgba(255,255,255,.06);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--glass2:rgba(255,255,255,.08);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--accent:#E2B870; <span class="Apple-converted-space">          </span>/* champagne gold */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--accent2:#f1d39a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--shadow: 0 18px 60px rgba(0,0,0,.55);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--shadowSoft: 0 14px 40px rgba(0,0,0,.35);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--radius: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--radius2: 28px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--max: 1180px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>*{ box-sizing:border-box; margin:0; padding:0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>html{ scroll-behavior:smooth; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family:"Noto Sans TC", system-ui, -apple-system, Segoe UI, Roboto, Arial;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color:var(--text);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>line-height:1.75;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>letter-spacing:.02em;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>overflow-x:hidden;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>/* ✅ 全站背景 */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>radial-gradient(900px 600px at 15% 15%, rgba(226,184,112,.14), transparent 60%),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>radial-gradient(900px 600px at 85% 30%, rgba(241,211,154,.08), transparent 60%),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>radial-gradient(1200px 800px at 50% 10%, rgba(0,0,0,.25), rgba(0,0,0,.78)),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>linear-gradient(180deg, rgba(7,7,7,.88), rgba(11,11,11,.96)),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>url("https://i.imgur.com/Fy3HKXi.jpg");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-size: cover;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-position: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-repeat: no-repeat;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-attachment: fixed;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>a{ color:inherit; text-decoration:none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>img{ max-width:100%; display:block; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.container{ width:min(var(--max), 92%); margin-inline:auto; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* --- Top Nav --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.nav{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position:fixed; inset:14px 0 auto 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>z-index:999;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>pointer-events:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.nav .bar{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>pointer-events:auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width:min(var(--max), 92%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin:0 auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>align-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>justify-content:space-between;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding:12px 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background:rgba(10,10,10,.55);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(10px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 999px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>box-shadow: 0 10px 30px rgba(0,0,0,.35);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.brand{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex; align-items:center; gap:10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding-left:6px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>min-width: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.brand-logo{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>height: 34px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>object-fit: contain;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>filter: drop-shadow(0 10px 22px rgba(0,0,0,.45));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>flex: 0 0 auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@media (max-width: 420px){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.brand-logo{ height: 30px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.brand .name{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family:"Playfair Display", serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>letter-spacing:.06em;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-weight:600;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size:1.05rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>white-space: nowrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.brand .tag{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size:.82rem; color:var(--muted2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-left:1px solid var(--line);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding-left:10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-left:6px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>white-space: nowrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.menu{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex; gap:14px; align-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color:var(--muted);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size:.92rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.menu a{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding:8px 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius:999px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition:.25s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>white-space: nowrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.menu a:hover{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background:rgba(255,255,255,.06);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color:var(--text);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* --- Buttons --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:inline-flex; align-items:center; justify-content:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gap:10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding:14px 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius:999px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-weight:600;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>letter-spacing:.02em;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: transform .25s ease, box-shadow .25s ease, background .25s ease, border-color .25s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>user-select:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>white-space:nowrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn:active{ transform: translateY(1px); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn-primary{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color:#0b0b0b;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, var(--accent), var(--accent2));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>box-shadow: 0 18px 55px rgba(226,184,112,.22);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 26px 75px rgba(226,184,112,.28); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn-ghost{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,.04);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(6px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color:var(--text);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn-ghost:hover{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-color: rgba(226,184,112,.45);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,.06);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transform: translateY(-2px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* --- Hero --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>header{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position:relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>min-height: 100vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>align-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 120px 0 70px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: transparent !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hero-grid{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:grid;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>grid-template-columns: 1.1fr .9fr;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gap:40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>align-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.kicker{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:inline-flex; align-items:center; gap:10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding:8px 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius:999px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,.03);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--muted);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size:.92rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-bottom:18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.kicker i{ color: var(--accent); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* HERO TITLE */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hero-title{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-bottom: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>line-height: 1.12;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-shadow: 0 18px 60px rgba(0,0,0,.55);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hero-title .hero-line1,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hero-title .hero-line2{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>white-space: nowrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hero-title .hero-line1{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family:"Playfair Display", serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: clamp(2.4rem, 4.2vw, 4.2rem);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>letter-spacing: .06em;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--text);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hero-title .hero-line2{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family:"Noto Sans TC", sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: clamp(1.15rem, 1.7vw, 1.65rem);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--accent);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>letter-spacing: .08em;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-top: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-shadow: 0 0 30px rgba(226,184,112,.18);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@media (max-width: 420px){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.hero-title .hero-line2{ white-space: normal; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hero-desc{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--muted);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 1.05rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>max-width: 52ch;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-bottom: 26px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.cta-row{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex; flex-wrap:wrap; gap:12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-bottom: 26px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.trust-row{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex; flex-wrap:wrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gap:12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--muted2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size:.92rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.pill{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:inline-flex; align-items:center; gap:8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding:10px 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius:999px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,.03);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.pill i{ color: var(--accent); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* --- Hero visual / Carousel --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hero-visual{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position:relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: var(--radius2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>overflow:hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>radial-gradient(800px 500px at 20% 20%, rgba(226,184,112,.14), transparent 55%),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>radial-gradient(900px 550px at 80% 40%, rgba(255,255,255,.06), transparent 60%),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadow);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>min-height: 480px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hero-visual::after{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>content:"";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position:absolute; inset:0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>radial-gradient(520px 320px at 70% 25%, rgba(226,184,112,.18), transparent 60%),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>radial-gradient(520px 320px at 25% 80%, rgba(255,255,255,.08), transparent 62%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>pointer-events:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>mix-blend-mode: screen;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>opacity:.75;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>z-index:2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* ✅ 輪播主視覺 */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.carousel{ position:absolute; inset:0; z-index:1; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.carousel-track{ position:absolute; inset:0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.carousel-slide{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position:absolute; inset:0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>opacity:0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transform: scale(1.02);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: opacity .9s ease, transform 1.2s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>will-change: opacity, transform;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.carousel-slide.is-active{ opacity:1; transform: scale(1); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.carousel-slide img{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width:100%; height:100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>object-fit: cover;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transform: translateZ(0);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>filter: saturate(1.05) contrast(1.02);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.carousel-overlay{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position:absolute; inset:0; z-index:1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>radial-gradient(800px 500px at 30% 30%, rgba(0,0,0,.25), rgba(0,0,0,.75)),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.72));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>pointer-events:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.carousel-ui{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position:absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>inset:auto 16px 106px 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>z-index:3;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>align-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>justify-content:space-between;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gap:10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.carousel-dots{ display:flex; gap:8px; align-items:center; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.dot{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width:8px; height:8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius:999px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid rgba(255,255,255,.35);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,.14);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>opacity:.75;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: transform .25s ease, background .25s ease, border-color .25s ease, width .25s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.dot.is-active{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width:22px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(226,184,112,.85);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-color: rgba(226,184,112,.85);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>opacity:1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.carousel-btns{ display:flex; gap:10px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.cbtn{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width:40px; height:40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius:999px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid rgba(255,255,255,.18);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(10,10,10,.35);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(8px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:grid;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>place-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: rgba(255,255,255,.92);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: transform .2s ease, border-color .2s ease, background .2s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>cursor:pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>user-select:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.cbtn:hover{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transform: translateY(-2px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-color: rgba(226,184,112,.55);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(10,10,10,.50);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.visual-card{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position:absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>inset:auto 18px 18px 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid rgba(255,255,255,.14);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(10,10,10,.62);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(10px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding:16px 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadowSoft);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gap:14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>align-items:flex-start;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>z-index:4;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.visual-card .icon{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width:44px; height:44px; border-radius:12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(226,184,112,.12);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid rgba(226,184,112,.25);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:grid; place-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--accent);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>flex:0 0 auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.visual-card h4{ font-size:1rem; margin-bottom:4px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.visual-card p{ color: var(--muted2); font-size:.92rem; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* --- Sections --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>section{ padding: 92px 0; position:relative; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.section-head{ text-align:center; margin-bottom: 44px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.section-head .eyebrow{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:inline-flex; align-items:center; gap:10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--muted2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size:.92rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding:8px 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius:999px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,.03);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-bottom:14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.section-head h2{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: clamp(1.7rem, 2.6vw, 2.4rem);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>letter-spacing:.05em;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-bottom: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-shadow: 0 18px 60px rgba(0,0,0,.45);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.section-head p{ color: var(--muted); max-width: 72ch; margin:0 auto; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.grid{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:grid;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(12, 1fr);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gap: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.card{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: var(--radius);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>overflow:hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadowSoft);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.card:hover{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transform: translateY(-6px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-color: rgba(226,184,112,.38);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>box-shadow: 0 22px 70px rgba(0,0,0,.55);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.card .inner{ padding: 22px 22px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.card .top{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex; align-items:center; gap:12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-bottom:12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.badge-icon{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width:44px; height:44px; border-radius:14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,.05);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid rgba(255,255,255,.12);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:grid; place-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--accent);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>box-shadow: 0 10px 30px rgba(0,0,0,.25);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>flex:0 0 auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.card h3{ font-size:1.15rem; letter-spacing:.04em; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.card p{ color: var(--muted); margin: 8px 0 0; font-size:.98rem; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.list{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-top: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--muted2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size:.95rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:grid;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gap:8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.list div{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex; gap:10px; align-items:flex-start;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding:10px 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid rgba(255,255,255,.08);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,.02);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.list i{ color: var(--accent); margin-top:2px; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.col-4{ grid-column: span 4; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.col-6{ grid-column: span 6; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.col-12{ grid-column: span 12; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.cta{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid rgba(226,184,112,.22);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>radial-gradient(700px 400px at 20% 20%, rgba(226,184,112,.18), transparent 60%),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>radial-gradient(700px 400px at 80% 60%, rgba(255,255,255,.06), transparent 60%),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 26px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 34px 28px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadow);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.cta .row{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex; align-items:center; justify-content:space-between; gap:18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>flex-wrap:wrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.cta h3{ font-size: 1.35rem; letter-spacing:.04em; margin-bottom:6px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.cta p{ color: var(--muted); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.two-col{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:grid;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 1fr;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gap: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>align-items:stretch;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.quote{ position:relative; padding:22px 22px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.quote .mark{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position:absolute; top:16px; right:18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: rgba(226,184,112,.28);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 2.2rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.meta{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-top:16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gap:12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>align-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--muted2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size:.92rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.avatar{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width:44px; height:44px; border-radius:14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(226,184,112,.14);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid rgba(226,184,112,.26);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:grid; place-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--accent);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>flex:0 0 auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>footer{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 36px 0 60px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-top: 1px solid rgba(255,255,255,.08);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--muted2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-align:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>footer .links{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex; gap:14px; justify-content:center; flex-wrap:wrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 10px 0 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>footer a{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding:8px 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius:999px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border:1px solid rgba(255,255,255,.10);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,.02);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>footer a:hover{ border-color: rgba(226,184,112,.35); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.footer-logo{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>height: 26px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>object-fit: contain;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>opacity: .95;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>filter: drop-shadow(0 10px 22px rgba(0,0,0,.45));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@media (prefers-reduced-motion:no-preference){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.fade-up{ opacity:0; transform: translateY(10px); animation: fadeUp .9s ease forwards; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.delay-1{ animation-delay:.08s; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.delay-2{ animation-delay:.16s; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.delay-3{ animation-delay:.24s; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>@keyframes fadeUp{ to{ opacity:1; transform: translateY(0);} }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@media (min-width: 860px){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.brand .tag{ display:inline; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@media (max-width: 920px){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.hero-grid{ grid-template-columns: 1fr; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.hero-visual{ min-height: 420px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.two-col{ grid-template-columns: 1fr; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@media (max-width: 820px){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.col-4{ grid-column: span 12; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.col-6{ grid-column: span 12; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.menu{ display:none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- NAV --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="nav"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="bar"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="brand"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- ✅ 已更新成你最新提供的 logo --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img class="brand-logo" src="https://i.imgur.com/lFKDTnf.png" alt="MileSpace Logo"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="name"&gt;MileSpace&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="tag"&gt;Live Jazz · Events · Booking&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="menu"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="#about"&gt;品牌定位&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="#events"&gt;近期活動&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="#booking"&gt;商演服務&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="#team"&gt;團隊理念&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="#contact"&gt;洽詢&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;a class="btn btn-ghost" href="https://line.me/ti/p/aOCp9yqeqG" target="_blank"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;i class="fa-solid fa-comment-dots"&gt;&lt;/i&gt; 洽詢商演</span></p>
+<p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- HERO --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;header&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="hero-grid"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="kicker fade-up"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;i class="fa-solid fa-music"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>台中爵士現場 × 商演 / 婚禮 / 包場 / 企業活動</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h1 class="hero-title fade-up delay-1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span class="hero-line1"&gt;MileSpace&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span class="hero-line2"&gt;爵士現場策劃與活動音樂整合&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/h1&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="hero-desc fade-up delay-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>我們專注於現場爵士演出與活動音樂整合。從小編制氛圍爵士到完整大樂團，</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>以專業流程與技術執行，為每一場活動打造有品味、有層次的聲音體驗。</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="cta-row fade-up delay-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a class="btn btn-primary" href="https://linktr.ee/milespace.jazz?utm_source=linktree_profile_share&amp;ltsid=af80dbdf-d541-4f2b-9cd8-d489997223e9" target="_blank" rel="noreferrer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;i class="fa-solid fa-calendar-days"&gt;&lt;/i&gt; 近期演出活動</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a class="btn btn-ghost" href="#contact"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;i class="fa-solid fa-handshake"&gt;&lt;/i&gt; 洽詢商演服務</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="trust-row fade-up delay-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="pill"&gt;&lt;i class="fa-solid fa-sliders"&gt;&lt;/i&gt; 編制客製 2–18 人&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="pill"&gt;&lt;i class="fa-solid fa-headphones-simple"&gt;&lt;/i&gt; 配合專業音控公司&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="pill"&gt;&lt;i class="fa-solid fa-clipboard-check"&gt;&lt;/i&gt; Stage Plot / Rider&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- ✅ 右側：輪播相簿（可預覽） --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="hero-visual fade-up delay-2" aria-label="MileSpace carousel"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="carousel" id="heroCarousel"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="carousel-track"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="carousel-slide is-active"&gt;&lt;img src="https://i.imgur.com/FH7qgm1.jpeg" alt="MileSpace Photo 1"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="carousel-slide"&gt;&lt;img src="https://i.imgur.com/GaM7uiE.jpeg" alt="MileSpace 爵士樂團 - 專業樂手現場演奏"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="carousel-slide"&gt;&lt;img src="https://i.imgur.com/xhuLutw.jpeg" alt="MileSpace 婚禮樂團 - 專業樂手現場演奏"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="carousel-slide"&gt;&lt;img src="https://i.imgur.com/YzD6DAV.jpeg" alt="MileSpace 爵士樂團 - 專業樂手現場演奏"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="carousel-slide"&gt;&lt;img src="https://i.imgur.com/jMthoiU.jpeg" alt="MileSpace jazzbar - 專業樂手現場演奏"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="carousel-slide"&gt;&lt;img src="https://i.imgur.com/95P1BpM.jpeg" alt="MileSpace 爵士酒吧 - 專業樂手現場演奏"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="carousel-slide"&gt;&lt;img src="https://i.imgur.com/BvlyTfD.jpeg" alt="MileSpace 質感婚禮樂團 - 專業樂手現場演奏"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="carousel-slide"&gt;&lt;img src="https://i.imgur.com/73ATpIS.jpeg" alt="MileSpace 婚禮樂團 - 專業樂手現場演奏"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="carousel-overlay" aria-hidden="true"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="carousel-ui"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="carousel-dots" aria-label="carousel dots"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="carousel-btns"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button class="cbtn" type="button" data-prev aria-label="Previous"&gt;&lt;i class="fa-solid fa-chevron-left"&gt;&lt;/i&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button class="cbtn" type="button" data-next aria-label="Next"&gt;&lt;i class="fa-solid fa-chevron-right"&gt;&lt;/i&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="visual-card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;&lt;i class="fa-solid fa-wand-magic-sparkles"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h4&gt;把音樂做成氣氛，把活動做成記憶&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;p&gt;從曲目、流程到現場控場，讓主辦方省心、觀眾有感。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- ABOUT --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="about"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="section-head"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="eyebrow"&gt;&lt;i class="fa-solid fa-compact-disc"&gt;&lt;/i&gt; About MileSpace&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;品牌定位&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>MileSpace 是結合爵士演出、活動策劃與音樂社群的品牌。</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>我們不是「找樂團來演出」，而是從活動目標、場地條件與觀眾輪廓出發，</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>設計最合適的編制、曲目與現場流程，讓音樂自然地成為活動的一部分。</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="grid"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card col-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="inner"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="top"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="badge-icon"&gt;&lt;i class="fa-solid fa-microphone-lines"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3&gt;固定爵士現場&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;定期主題企劃、現場演出與合作活動，打造城市裡的音樂角落。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;主題音樂夜 / 合作演出&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;樂手媒合與社群交流&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;內容與活動導流整合&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card col-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="inner"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="top"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="badge-icon"&gt;&lt;i class="fa-solid fa-briefcase"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3&gt;商演與包場&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;婚禮、開幕、企業活動、品牌發表等，提供一站式演出規劃。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;編制 / 曲目依需求客製&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;流程控管與現場控場&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;可搭配主持、歌手、音控&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card col-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="inner"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="top"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="badge-icon"&gt;&lt;i class="fa-solid fa-sliders"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3&gt;專業技術整合&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;配合專業音控公司與技術團隊，讓聲音與舞台呈現穩定可控。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;Technical Rider / Stage Plot&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;音量、動線、節目節奏設計&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;現場溝通與執行協調&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- EVENTS --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="events"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="section-head"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="eyebrow"&gt;&lt;i class="fa-solid fa-calendar"&gt;&lt;/i&gt; Events&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;近期活動&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;最新演出、報名與公告，統一在 Linktree 更新。點擊下方按鈕查看。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="cta"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;查看近期演出與活動資訊&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;活動卡司 / 時間地點 / 報名連結，一鍵整理。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;a class="btn btn-primary" href="https://linktr.ee/milespace.jazz?utm_source=linktree_profile_share&amp;ltsid=af80dbdf-d541-4f2b-9cd8-d489997223e9" target="_blank" rel="noreferrer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;i class="fa-solid fa-arrow-up-right-from-square"&gt;&lt;/i&gt; 前往 Linktree</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- BOOKING / SERVICES --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="booking"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="section-head"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="eyebrow"&gt;&lt;i class="fa-solid fa-handshake"&gt;&lt;/i&gt; Booking&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;商演 / 活動服務&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>從小編制氛圍爵士到 12–18 人 Big Band，</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>皆可配合專業音控公司與技術團隊，確保活動現場呈現穩定、精準、有質感。</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="grid"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card col-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="inner"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="top"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="badge-icon"&gt;&lt;i class="fa-solid fa-martini-glass-citrus"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3&gt;小編制氛圍爵士（2–4 人）&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;適合：酒會、餐廳、品牌活動。音量與氣氛細膩，讓交流更舒服。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;適合室內空間與近距離互動&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;可選 Swing / Bossa / Standard Jazz&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;配合專業音控公司&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card col-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="inner"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="top"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="badge-icon"&gt;&lt;i class="fa-solid fa-champagne-glasses"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3&gt;標準爵士樂團（5–7 人）&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;適合：開幕、婚禮迎賓、主題派對。層次完整，音樂成為活動亮點。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;可搭配歌手 / 主持 / 互動段落&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;可依品牌調性設計歌單與段落&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;配合專業音控公司&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card col-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="inner"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="top"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="badge-icon"&gt;&lt;i class="fa-solid fa-music"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3&gt;爵士大樂團 Big Band（12–18 人）&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;適合：大型舞台、節慶、市集、企業晚會。舞台效果強、氣勢完整。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;視覺與聲音震撼，適合大型空間&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;可規劃完整節目流程與主題演出&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;配合專業音控公司&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card col-12"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="inner"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="top"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="badge-icon"&gt;&lt;i class="fa-solid fa-headphones-simple"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3&gt;技術與執行（安心交給我們）&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>事前溝通確認活動節奏與動線，提供清楚的 Technical Rider / Stage Plot，</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>並與音控、場地方密切配合，降低現場不確定性，確保演出品質。</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;演出動線與音量策略（不干擾 / 強亮點 / 主舞台）&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;演出段落設計：迎賓、進場、互動、收尾&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;現場控場與對接：主辦／音控／場地&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div style="margin-top:20px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="cta"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3&gt;需要報價或想討論活動形式？&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;p&gt;填寫商演需求表，我們將依需求提供最合適的編制建議與報價。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a class="btn btn-primary" href="#contact"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;i class="fa-solid fa-pen-to-square"&gt;&lt;/i&gt; 前往需求表</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- TEAM / TRUST --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="team"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="section-head"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="eyebrow"&gt;&lt;i class="fa-solid fa-shield-heart"&gt;&lt;/i&gt; Trust&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;團隊與理念&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>MileSpace 由爵士樂手與活動策劃團隊共同經營，</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>核心成員長期投入台中爵士音樂場景，熟悉不同場地條件與活動節奏。</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>我們用「流程」與「專業技術整合」把不確定性降到最低，讓主辦方放心、觀眾有感。</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="two-col"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card quote"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="inner"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="mark"&gt;&lt;i class="fa-solid fa-quote-right"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 style="margin-bottom:10px;"&gt;團長 / 策劃人&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p style="color:var(--muted);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>凃譯翔（Easen Tu）｜薩克斯風手、策劃人。長期投入爵士演出、教育與大樂團合奏，</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>以「音樂品質＋執行流程」為核心，讓每一次演出都能穩定呈現、貼合活動調性。</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="meta"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="avatar"&gt;&lt;i class="fa-solid fa-saxophone"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div style="color:var(--text); font-weight:700;"&gt;Easen Tu｜Leader&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div&gt;Live Jazz · Event Design · Big Band&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="inner"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="top"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div class="badge-icon"&gt;&lt;i class="fa-solid fa-compass-drafting"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3&gt;MileSpace 的方法論（讓活動更好聽、更好看、更順）&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;&lt;b&gt;對齊活動目標&lt;/b&gt;：迎賓氛圍、主舞台亮點、互動段落、品牌調性，先定策略再定曲目。&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;&lt;b&gt;流程清楚&lt;/b&gt;：事前溝通 → 音樂段落設計 → 彩排/走位 → 現場控場，降低風險。&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;&lt;b&gt;技術整合&lt;/b&gt;：Rider / Stage Plot 清楚，與音控公司協作，確保聲音與舞台呈現。&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;&lt;span&gt;&lt;b&gt;品質穩定&lt;/b&gt;：演出規格標準化，讓每一場都能穩定輸出、可預期、可複製。&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- CONTACT --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="contact"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="section-head"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="eyebrow"&gt;&lt;i class="fa-solid fa-paper-plane"&gt;&lt;/i&gt; Contact&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;填寫商演需求表&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;把活動日期、地點、預算與希望的編制告訴我們，我們會用最快速度回覆規劃建議。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="cta"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;讓 MileSpace 提升活動質感&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfcUfg9WLu_Mn2o1x87iiilryxr3m1b9aDPEKt6cPB4tm73Ww/viewform?usp=header" target="_blank" rel="noreferrer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;i class="fa-solid fa-pen-to-square"&gt;&lt;/i&gt; 立即填寫需求表</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div style="margin-top:18px; text-align:center; color:var(--muted2); font-size:.92rem;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>也可以先看近期演出活動 →</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a style="color:var(--accent); text-decoration:underline;" href="https://linktr.ee/milespace.jazz?utm_source=linktree_profile_share&amp;ltsid=af80dbdf-d541-4f2b-9cd8-d489997223e9" target="_blank" rel="noreferrer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Linktree</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div style="display:flex; align-items:center; justify-content:center; gap:10px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- ✅ footer logo 同步更新 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img class="footer-logo" src="https://i.imgur.com/lFKDTnf.png" alt="MileSpace Logo"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div style="font-family:'Playfair Display',serif; letter-spacing:.06em; font-size:1.05rem; color:var(--text);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>MileSpace</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div style="margin-top:8px;"&gt;© 2025 MileSpace Jazz. All Rights Reserved.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="links"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="#about"&gt;&lt;i class="fa-solid fa-circle-info"&gt;&lt;/i&gt; 品牌定位&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="#booking"&gt;&lt;i class="fa-solid fa-handshake"&gt;&lt;/i&gt; 商演服務&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="https://linktr.ee/milespace.jazz?utm_source=linktree_profile_share&amp;ltsid=af80dbdf-d541-4f2b-9cd8-d489997223e9" target="_blank" rel="noreferrer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;i class="fa-solid fa-calendar-days"&gt;&lt;/i&gt; 近期活動</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- ✅ Carousel JS --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>(function(){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const root = document.getElementById('heroCarousel');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if(!root) return;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const slides = Array.from(root.querySelectorAll('.carousel-slide'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const dotsWrap = root.querySelector('.carousel-dots');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const prevBtn = root.querySelector('[data-prev]');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const nextBtn = root.querySelector('[data-next]');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>let index = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>let timer = null;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const INTERVAL = 4200;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>slides.forEach((_, i) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const d = document.createElement('span');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>d.className = 'dot' + (i === 0 ? ' is-active' : '');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>d.setAttribute('role', 'button');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>d.setAttribute('aria-label', 'Go to slide ' + (i + 1));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>d.style.cursor = 'pointer';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>d.addEventListener('click', () =&gt; go(i, true));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>dotsWrap.appendChild(d);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const dots = Array.from(dotsWrap.querySelectorAll('.dot'));</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>function setActive(i){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>slides.forEach((s, si) =&gt; s.classList.toggle('is-active', si === i));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>dots.forEach((d, di) =&gt; d.classList.toggle('is-active', di === i));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>index = i;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>function go(i, userAction){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const next = (i + slides.length) % slides.length;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>setActive(next);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if(userAction) restart();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>function next(){ go(index + 1, true); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>function prev(){ go(index - 1, true); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>function start(){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>stop();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>timer = setInterval(() =&gt; go(index + 1, false), INTERVAL);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>function stop(){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if(timer){ clearInterval(timer); timer = null; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>function restart(){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>stop();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>start();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if(nextBtn) nextBtn.addEventListener('click', next);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if(prevBtn) prevBtn.addEventListener('click', prev);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>root.addEventListener('mouseenter', stop);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>root.addEventListener('mouseleave', start);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>let x0 = null;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>root.addEventListener('touchstart', (e) =&gt; { x0 = e.touches[0].clientX; }, {passive:true});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>root.addEventListener('touchend', (e) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if(x0 === null) return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const x1 = e.changedTouches[0].clientX;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const dx = x1 - x0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if(Math.abs(dx) &gt; 40){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>dx &lt; 0 ? next() : prev();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>x0 = null;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}, {passive:true});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// preload images</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>slides.forEach(sl =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const img = sl.querySelector('img');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if(img){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const pre = new Image();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>pre.src = img.src;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>start();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>})();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
