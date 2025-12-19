@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MileSpace｜爵士現場 × 商演策劃</title>
+  <title>MileSpace｜爵士現場 × 商演策劃 × 婚禮樂團 × jazz bar</title>
 
-  <!-- Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
@@ -25,6 +23,7 @@
       --glass2:rgba(255,255,255,.08);
       --accent:#E2B870;           /* champagne gold */
       --accent2:#f1d39a;
+      --line-green: #06C755;      /* LINE Green */
       --shadow: 0 18px 60px rgba(0,0,0,.55);
       --shadowSoft: 0 14px 40px rgba(0,0,0,.35);
       --radius: 18px;
@@ -54,7 +53,7 @@
       background-attachment: fixed;
     }
 
-    a{ color:inherit; text-decoration:none; }
+    a{ color:inherit; text-decoration:none; transition: .3s ease; }
     img{ max-width:100%; display:block; }
     .container{ width:min(var(--max), 92%); margin-inline:auto; }
 
@@ -126,6 +125,22 @@
       color:var(--text);
     }
 
+    /* --- ✅ 頁首社群圖示樣式 --- */
+    .nav-socials {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-right: 15px;
+    }
+    .nav-socials a {
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+    .nav-socials a:hover {
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
     /* --- Buttons --- */
     .btn{
       display:inline-flex; align-items:center; justify-content:center;
@@ -145,6 +160,17 @@
       box-shadow: 0 18px 55px rgba(226,184,112,.22);
     }
     .btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 26px 75px rgba(226,184,112,.28); }
+
+    .btn-line{
+      border:1px solid var(--line-green);
+      background: rgba(6, 199, 85, 0.05);
+      color: var(--line-green);
+    }
+    .btn-line:hover{
+      background: var(--line-green);
+      color: #fff;
+      transform: translateY(-2px);
+    }
 
     .btn-ghost{
       border:1px solid var(--line);
@@ -360,6 +386,31 @@
     .visual-card h4{ font-size:1rem; margin-bottom:4px; }
     .visual-card p{ color: var(--muted2); font-size:.92rem; }
 
+    /* --- ✅ 新增：行事曆區塊樣式 --- */
+    .calendar-wrapper {
+      background: rgba(10, 10, 10, 0.4);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadowSoft);
+      margin-top: 30px;
+    }
+    .calendar-container {
+      position: relative;
+      padding-bottom: 75%; /* 電腦版高度比例 */
+      height: 0;
+      overflow: hidden;
+    }
+    @media (max-width: 768px) {
+      .calendar-container { padding-bottom: 120%; } /* 手機版拉高一點方便閱讀 */
+    }
+    .calendar-container iframe {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      border: 0;
+      filter: invert(90%) hue-rotate(180deg) brightness(0.95); /* 使日曆呈現深色質感 */
+    }
+
     /* --- Sections --- */
     section{ padding: 92px 0; position:relative; }
     .section-head{ text-align:center; margin-bottom: 44px; }
@@ -528,16 +579,45 @@
       .col-6{ grid-column: span 12; }
       .menu{ display:none; }
     }
+
+    /* ✅ 團長照片相關樣式 */
+    .leader-flex-container {
+      display: flex;
+      gap: 22px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .leader-image-wrapper {
+      flex: 0 0 150px;
+      height: 200px;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(226, 184, 112, 0.4);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .leader-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .leader-content {
+      flex: 1;
+      min-width: 260px;
+    }
+    @media (max-width: 480px) {
+      .leader-image-wrapper {
+        flex: 0 0 100%;
+        height: 280px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- NAV -->
   <div class="nav">
     <div class="bar">
       <div class="brand">
-        <!-- ✅ 已更新成你最新提供的 logo -->
         <img class="brand-logo" src="https://i.imgur.com/lFKDTnf.png" alt="MileSpace Logo">
         <div class="name">MileSpace</div>
         <div class="tag">Live Jazz · Events · Booking</div>
@@ -551,14 +631,18 @@
         <a href="#contact">洽詢</a>
       </div>
 
-<a class="btn btn-ghost" href="https://line.me/ti/p/aOCp9yqeqG" target="_blank">
-  <i class="fa-solid fa-comment-dots"></i> 洽詢商演
-</a>
- 
+      <div style="display:flex; align-items:center;">
+        <div class="nav-socials">
+          <a href="https://www.instagram.com/milespace_jazz/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100095551352360" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <a class="btn btn-line" href="https://line.me/ti/p/aOCp9yqeqG" target="_blank">
+          <i class="fa-brands fa-line"></i> LINE 洽詢
+        </a>
+      </div>
     </div>
   </div>
 
-  <!-- HERO -->
   <header>
     <div class="container">
       <div class="hero-grid">
@@ -579,8 +663,8 @@
           </p>
 
           <div class="cta-row fade-up delay-3">
-            <a class="btn btn-primary" href="https://linktr.ee/milespace.jazz?utm_source=linktree_profile_share&ltsid=af80dbdf-d541-4f2b-9cd8-d489997223e9" target="_blank" rel="noreferrer">
-              <i class="fa-solid fa-calendar-days"></i> 近期演出活動
+            <a class="btn btn-primary" href="#events">
+              <i class="fa-solid fa-calendar-days"></i> 查看演出行程
             </a>
             <a class="btn btn-ghost" href="#contact">
               <i class="fa-solid fa-handshake"></i> 洽詢商演服務
@@ -594,18 +678,17 @@
           </div>
         </div>
 
-        <!-- ✅ 右側：輪播相簿（可預覽） -->
         <div class="hero-visual fade-up delay-2" aria-label="MileSpace carousel">
           <div class="carousel" id="heroCarousel">
             <div class="carousel-track">
-              <div class="carousel-slide is-active"><img src="https://i.imgur.com/FH7qgm1.jpeg" alt="MileSpace Photo 1"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/GaM7uiE.jpeg" alt="MileSpace 爵士樂團 - 專業樂手現場演奏"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/xhuLutw.jpeg" alt="MileSpace 婚禮樂團 - 專業樂手現場演奏"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/YzD6DAV.jpeg" alt="MileSpace 爵士樂團 - 專業樂手現場演奏"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/jMthoiU.jpeg" alt="MileSpace jazzbar - 專業樂手現場演奏"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/95P1BpM.jpeg" alt="MileSpace 爵士酒吧 - 專業樂手現場演奏"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/BvlyTfD.jpeg" alt="MileSpace 質感婚禮樂團 - 專業樂手現場演奏"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/73ATpIS.jpeg" alt="MileSpace 婚禮樂團 - 專業樂手現場演奏"></div>
+              <div class="carousel-slide is-active"><img src="https://i.imgur.com/FH7qgm1.jpeg" alt="Photo 1"></div>
+              <div class="carousel-slide"><img src="https://i.imgur.com/GaM7uiE.jpeg" alt="Photo 2"></div>
+              <div class="carousel-slide"><img src="https://i.imgur.com/xhuLutw.jpeg" alt="Photo 3"></div>
+              <div class="carousel-slide"><img src="https://i.imgur.com/YzD6DAV.jpeg" alt="Photo 4"></div>
+              <div class="carousel-slide"><img src="https://i.imgur.com/jMthoiU.jpeg" alt="Photo 5"></div>
+              <div class="carousel-slide"><img src="https://i.imgur.com/95P1BpM.jpeg" alt="Photo 6"></div>
+              <div class="carousel-slide"><img src="https://i.imgur.com/BvlyTfD.jpeg" alt="Photo 7"></div>
+              <div class="carousel-slide"><img src="https://i.imgur.com/73ATpIS.jpeg" alt="Photo 8"></div>
             </div>
 
             <div class="carousel-overlay" aria-hidden="true"></div>
@@ -613,8 +696,8 @@
             <div class="carousel-ui">
               <div class="carousel-dots" aria-label="carousel dots"></div>
               <div class="carousel-btns">
-                <button class="cbtn" type="button" data-prev aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="cbtn" type="button" data-next aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+                <button class="cbtn" type="button" data-prev><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="cbtn" type="button" data-next><i class="fa-solid fa-chevron-right"></i></button>
               </div>
             </div>
           </div>
@@ -632,17 +715,12 @@
     </div>
   </header>
 
-  <!-- ABOUT -->
   <section id="about">
     <div class="container">
       <div class="section-head">
         <div class="eyebrow"><i class="fa-solid fa-compact-disc"></i> About MileSpace</div>
         <h2>品牌定位</h2>
-        <p>
-          MileSpace 是結合爵士演出、活動策劃與音樂社群的品牌。
-          我們不是「找樂團來演出」，而是從活動目標、場地條件與觀眾輪廓出發，
-          設計最合適的編制、曲目與現場流程，讓音樂自然地成為活動的一部分。
-        </p>
+        <p>MileSpace 是結合爵士演出、活動策劃與音樂社群的 brand。設計最合適的編制、曲目與現場流程，讓音樂自然地成為活動的一部分。</p>
       </div>
 
       <div class="grid">
@@ -691,43 +769,50 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- EVENTS -->
   <section id="events">
     <div class="container">
       <div class="section-head">
         <div class="eyebrow"><i class="fa-solid fa-calendar"></i> Events</div>
-        <h2>近期活動</h2>
-        <p>最新演出、報名與公告，統一在 Linktree 更新。點擊下方按鈕查看。</p>
+        <h2>近期活動行程</h2>
+        <p>同步更新 Google 行事曆。您可以直接在下方查看演出、報名與公告資訊。</p>
       </div>
 
-      <div class="cta">
-        <div class="row">
-          <div>
-            <h3>查看近期演出與活動資訊</h3>
-            <p>活動卡司 / 時間地點 / 報名連結，一鍵整理。</p>
+      <div class="calendar-wrapper">
+        <div class="calendar-container">
+          <iframe 
+            src="https://calendar.google.com/calendar/embed?src=12e1215dc9c046261a270c6c7c4ad1ba28787f4acf3fbb5e52b615f529591b6b%40group.calendar.google.com&ctz=Asia%2FTaipei&mode=MONTH&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=1" 
+            style="border:0" 
+            frameborder="0" 
+            scrolling="no">
+          </iframe>
+        </div>
+      </div>
+
+      <div style="margin-top:40px;">
+        <div class="cta">
+          <div class="row">
+            <div>
+              <h3>更多連結與活動詳細資訊</h3>
+              <p>若您想查看過往作品或完整連結，請點擊右側 Linktree。</p>
+            </div>
+            <a class="btn btn-ghost" href="https://linktr.ee/milespace.jazz" target="_blank">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> 前往 Linktree
+            </a>
           </div>
-          <a class="btn btn-primary" href="https://linktr.ee/milespace.jazz?utm_source=linktree_profile_share&ltsid=af80dbdf-d541-4f2b-9cd8-d489997223e9" target="_blank" rel="noreferrer">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> 前往 Linktree
-          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- BOOKING / SERVICES -->
   <section id="booking">
     <div class="container">
       <div class="section-head">
         <div class="eyebrow"><i class="fa-solid fa-handshake"></i> Booking</div>
         <h2>商演 / 活動服務</h2>
-        <p>
-          從小編制氛圍爵士到 12–18 人 Big Band，
-          皆可配合專業音控公司與技術團隊，確保活動現場呈現穩定、精準、有質感。
-        </p>
+        <p>從小編制氛圍爵士到 12–18 人 Big Band，確保活動現場呈現穩定、精準、有質感。</p>
       </div>
 
       <div class="grid">
@@ -740,7 +825,7 @@
             <p>適合：酒會、餐廳、品牌活動。音量與氣氛細膩，讓交流更舒服。</p>
             <div class="list">
               <div><i class="fa-solid fa-check"></i><span>適合室內空間與近距離互動</span></div>
-              <div><i class="fa-solid fa-check"></i><span>可選 Swing / Bossa / Standard Jazz</span></div>
+              <div><i class="fa-solid fa-check"></i><span>可選 Swing / Bossa / Standard</span></div>
               <div><i class="fa-solid fa-check"></i><span>配合專業音控公司</span></div>
             </div>
           </div>
@@ -754,8 +839,8 @@
             </div>
             <p>適合：開幕、婚禮迎賓、主題派對。層次完整，音樂成為活動亮點。</p>
             <div class="list">
-              <div><i class="fa-solid fa-check"></i><span>可搭配歌手 / 主持 / 互動段落</span></div>
-              <div><i class="fa-solid fa-check"></i><span>可依品牌調性設計歌單與段落</span></div>
+              <div><i class="fa-solid fa-check"></i><span>可搭配歌手 / 主持 / 互動</span></div>
+              <div><i class="fa-solid fa-check"></i><span>設計客製化歌單</span></div>
               <div><i class="fa-solid fa-check"></i><span>配合專業音控公司</span></div>
             </div>
           </div>
@@ -769,77 +854,44 @@
             </div>
             <p>適合：大型舞台、節慶、市集、企業晚會。舞台效果強、氣勢完整。</p>
             <div class="list">
-              <div><i class="fa-solid fa-check"></i><span>視覺與聲音震撼，適合大型空間</span></div>
-              <div><i class="fa-solid fa-check"></i><span>可規劃完整節目流程與主題演出</span></div>
+              <div><i class="fa-solid fa-check"></i><span>視覺與聲音震撼，適合大空間</span></div>
+              <div><i class="fa-solid fa-check"></i><span>規劃完整主題演出節目</span></div>
               <div><i class="fa-solid fa-check"></i><span>配合專業音控公司</span></div>
             </div>
           </div>
         </div>
-
-        <div class="card col-12">
-          <div class="inner">
-            <div class="top">
-              <div class="badge-icon"><i class="fa-solid fa-headphones-simple"></i></div>
-              <h3>技術與執行（安心交給我們）</h3>
-            </div>
-            <p>
-              事前溝通確認活動節奏與動線，提供清楚的 Technical Rider / Stage Plot，
-              並與音控、場地方密切配合，降低現場不確定性，確保演出品質。
-            </p>
-            <div class="list">
-              <div><i class="fa-solid fa-check"></i><span>演出動線與音量策略（不干擾 / 強亮點 / 主舞台）</span></div>
-              <div><i class="fa-solid fa-check"></i><span>演出段落設計：迎賓、進場、互動、收尾</span></div>
-              <div><i class="fa-solid fa-check"></i><span>現場控場與對接：主辦／音控／場地</span></div>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <div style="margin-top:20px;">
-        <div class="cta">
-          <div class="row">
-            <div>
-              <h3>需要報價或想討論活動形式？</h3>
-              <p>填寫商演需求表，我們將依需求提供最合適的編制建議與報價。</p>
-            </div>
-            <a class="btn btn-primary" href="#contact">
-              <i class="fa-solid fa-pen-to-square"></i> 前往需求表
-            </a>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- TEAM / TRUST -->
   <section id="team">
     <div class="container">
       <div class="section-head">
         <div class="eyebrow"><i class="fa-solid fa-shield-heart"></i> Trust</div>
         <h2>團隊與理念</h2>
-        <p>
-          MileSpace 由爵士樂手與活動策劃團隊共同經營，
-          核心成員長期投入台中爵士音樂場景，熟悉不同場地條件與活動節奏。
-          我們用「流程」與「專業技術整合」把不確定性降到最低，讓主辦方放心、觀眾有感。
-        </p>
       </div>
 
       <div class="two-col">
         <div class="card quote">
           <div class="inner">
-            <div class="mark"><i class="fa-solid fa-quote-right"></i></div>
-            <h3 style="margin-bottom:10px;">團長 / 策劃人</h3>
-            <p style="color:var(--muted);">
-              凃譯翔（Easen Tu）｜薩克斯風手、策劃人。長期投入爵士演出、教育與大樂團合奏，
-              以「音樂品質＋執行流程」為核心，讓每一次演出都能穩定呈現、貼合活動調性。
-            </p>
+            <div class="leader-flex-container">
+              <div class="leader-image-wrapper">
+                <img src="https://i.imgur.com/QhAk8M4.jpeg" alt="團長 凃譯翔">
+              </div>
+              <div class="leader-content">
+                <div class="mark"><i class="fa-solid fa-quote-right"></i></div>
+                <h3 style="margin-bottom:10px;">團長 / 策劃人</h3>
+                <p style="color:var(--muted); font-size: 0.95rem;">
+                  凃譯翔（Easen Tu）｜薩克斯風手。長期投入爵士演出與大樂團合奏，以「專業執行流程」確保演出品質，讓主辦方放心。
+                </p>
 
-            <div class="meta">
-              <div class="avatar"><i class="fa-solid fa-saxophone"></i></div>
-              <div>
-                <div style="color:var(--text); font-weight:700;">Easen Tu｜Leader</div>
-                <div>Live Jazz · Event Design · Big Band</div>
+                <div class="meta">
+                  <div class="avatar"><i class="fa-solid fa-saxophone"></i></div>
+                  <div>
+                    <div style="color:var(--text); font-weight:700;">Easen Tu｜Leader</div>
+                    <div>Live Jazz · Event Design</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -849,48 +901,32 @@
           <div class="inner">
             <div class="top">
               <div class="badge-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-              <h3>MileSpace 的方法論（讓活動更好聽、更好看、更順）</h3>
+              <h3>MileSpace 的方法論</h3>
             </div>
-
             <div class="list">
-              <div><i class="fa-solid fa-check"></i><span><b>對齊活動目標</b>：迎賓氛圍、主舞台亮點、互動段落、品牌調性，先定策略再定曲目。</span></div>
-              <div><i class="fa-solid fa-check"></i><span><b>流程清楚</b>：事前溝通 → 音樂段落設計 → 彩排/走位 → 現場控場，降低風險。</span></div>
-              <div><i class="fa-solid fa-check"></i><span><b>技術整合</b>：Rider / Stage Plot 清楚，與音控公司協作，確保聲音與舞台呈現。</span></div>
-              <div><i class="fa-solid fa-check"></i><span><b>品質穩定</b>：演出規格標準化，讓每一場都能穩定輸出、可預期、可複製。</span></div>
+              <div><i class="fa-solid fa-check"></i><span><b>對齊目標</b>：先定策略再定曲目。</span></div>
+              <div><i class="fa-solid fa-check"></i><span><b>流程清楚</b>：事前溝通，降低風險。</span></div>
+              <div><i class="fa-solid fa-check"></i><span><b>技術整合</b>：確保現場聲音品質。</span></div>
+              <div><i class="fa-solid fa-check"></i><span><b>品質穩定</b>：穩定輸出、可預期。</span></div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact">
     <div class="container">
-      <div class="section-head">
-        <div class="eyebrow"><i class="fa-solid fa-paper-plane"></i> Contact</div>
-        <h2>填寫商演需求表</h2>
-        <p>把活動日期、地點、預算與希望的編制告訴我們，我們會用最快速度回覆規劃建議。</p>
-      </div>
-
       <div class="cta">
         <div class="row">
           <div>
-            <h3>讓 MileSpace 提升活動質感</h3>
-            
+            <h3>開始您的音樂策劃</h3>
+            <p>填寫需求表，我們將提供最合適的編制建議與報價。</p>
           </div>
-          <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfcUfg9WLu_Mn2o1x87iiilryxr3m1b9aDPEKt6cPB4tm73Ww/viewform?usp=header" target="_blank" rel="noreferrer">
+          <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfcUfg9WLu_Mn2o1x87iiilryxr3m1b9aDPEKt6cPB4tm73Ww/viewform" target="_blank">
             <i class="fa-solid fa-pen-to-square"></i> 立即填寫需求表
           </a>
         </div>
-      </div>
-
-      <div style="margin-top:18px; text-align:center; color:var(--muted2); font-size:.92rem;">
-        也可以先看近期演出活動 →
-        <a style="color:var(--accent); text-decoration:underline;" href="https://linktr.ee/milespace.jazz?utm_source=linktree_profile_share&ltsid=af80dbdf-d541-4f2b-9cd8-d489997223e9" target="_blank" rel="noreferrer">
-          Linktree
-        </a>
       </div>
     </div>
   </section>
@@ -898,25 +934,13 @@
   <footer>
     <div class="container">
       <div style="display:flex; align-items:center; justify-content:center; gap:10px;">
-        <!-- ✅ footer logo 同步更新 -->
         <img class="footer-logo" src="https://i.imgur.com/lFKDTnf.png" alt="MileSpace Logo">
-        <div style="font-family:'Playfair Display',serif; letter-spacing:.06em; font-size:1.05rem; color:var(--text);">
-          MileSpace
-        </div>
+        <div style="font-family:'Playfair Display',serif; letter-spacing:.06em; font-size:1.05rem; color:var(--text);">MileSpace</div>
       </div>
-
       <div style="margin-top:8px;">© 2025 MileSpace Jazz. All Rights Reserved.</div>
-      <div class="links">
-        <a href="#about"><i class="fa-solid fa-circle-info"></i> 品牌定位</a>
-        <a href="#booking"><i class="fa-solid fa-handshake"></i> 商演服務</a>
-        <a href="https://linktr.ee/milespace.jazz?utm_source=linktree_profile_share&ltsid=af80dbdf-d541-4f2b-9cd8-d489997223e9" target="_blank" rel="noreferrer">
-          <i class="fa-solid fa-calendar-days"></i> 近期活動
-        </a>
-      </div>
     </div>
   </footer>
 
-  <!-- ✅ Carousel JS -->
   <script>
     (function(){
       const root = document.getElementById('heroCarousel');
@@ -926,77 +950,26 @@
       const dotsWrap = root.querySelector('.carousel-dots');
       const prevBtn = root.querySelector('[data-prev]');
       const nextBtn = root.querySelector('[data-next]');
-
       let index = 0;
-      let timer = null;
-      const INTERVAL = 4200;
 
       slides.forEach((_, i) => {
         const d = document.createElement('span');
         d.className = 'dot' + (i === 0 ? ' is-active' : '');
-        d.setAttribute('role', 'button');
-        d.setAttribute('aria-label', 'Go to slide ' + (i + 1));
-        d.style.cursor = 'pointer';
-        d.addEventListener('click', () => go(i, true));
         dotsWrap.appendChild(d);
       });
       const dots = Array.from(dotsWrap.querySelectorAll('.dot'));
 
-      function setActive(i){
-        slides.forEach((s, si) => s.classList.toggle('is-active', si === i));
-        dots.forEach((d, di) => d.classList.toggle('is-active', di === i));
-        index = i;
+      function goTo(newIndex) {
+        slides[index].classList.remove('is-active');
+        dots[index].classList.remove('is-active');
+        index = (newIndex + slides.length) % slides.length;
+        slides[index].classList.add('is-active');
+        dots[index].classList.add('is-active');
       }
 
-      function go(i, userAction){
-        const next = (i + slides.length) % slides.length;
-        setActive(next);
-        if(userAction) restart();
-      }
-
-      function next(){ go(index + 1, true); }
-      function prev(){ go(index - 1, true); }
-
-      function start(){
-        stop();
-        timer = setInterval(() => go(index + 1, false), INTERVAL);
-      }
-      function stop(){
-        if(timer){ clearInterval(timer); timer = null; }
-      }
-      function restart(){
-        stop();
-        start();
-      }
-
-      if(nextBtn) nextBtn.addEventListener('click', next);
-      if(prevBtn) prevBtn.addEventListener('click', prev);
-
-      root.addEventListener('mouseenter', stop);
-      root.addEventListener('mouseleave', start);
-
-      let x0 = null;
-      root.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, {passive:true});
-      root.addEventListener('touchend', (e) => {
-        if(x0 === null) return;
-        const x1 = e.changedTouches[0].clientX;
-        const dx = x1 - x0;
-        if(Math.abs(dx) > 40){
-          dx < 0 ? next() : prev();
-        }
-        x0 = null;
-      }, {passive:true});
-
-      // preload images
-      slides.forEach(sl => {
-        const img = sl.querySelector('img');
-        if(img){
-          const pre = new Image();
-          pre.src = img.src;
-        }
-      });
-
-      start();
+      nextBtn.onclick = () => goTo(index + 1);
+      prevBtn.onclick = () => goTo(index - 1);
+      setInterval(() => goTo(index + 1), 5000);
     })();
   </script>
 
