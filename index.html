@@ -431,7 +431,7 @@
     .visual-card h4{ font-size:1rem; margin-bottom:4px; }
     .visual-card p{ color: var(--muted2); font-size:.92rem; }
 
-    /* --- ✅ 新增：行事曆區塊樣式 --- */
+    /* --- ✅ 行事曆區塊樣式 --- */
     .calendar-wrapper {
       background: rgba(10, 10, 10, 0.4);
       border: 1px solid var(--line);
@@ -453,7 +453,7 @@
       position: absolute;
       top: 0; left: 0; width: 100%; height: 100%;
       border: 0;
-      filter: invert(90%) hue-rotate(180deg) brightness(0.95); /* 使日曆呈現深色質感 */
+      filter: invert(90%) hue-rotate(180deg) brightness(0.95);
     }
 
     /* --- Sections --- */
@@ -556,14 +556,13 @@
     }
 
     /* ✅ Team re-layout */
-    .team-card{
-      padding: 26px 24px;
-    }
+    .team-card{ padding: 26px 24px; }
     .leader-grid{
       display:grid;
       grid-template-columns: 160px 1fr;
       gap: 18px;
       align-items: start;
+      min-width: 0;
     }
     .leader-photo{
       width: 160px;
@@ -574,15 +573,14 @@
       box-shadow: 0 14px 40px rgba(0,0,0,.35);
       background: rgba(0,0,0,.25);
     }
-    .leader-photo img{
-      width:100%; height:100%;
-      object-fit: cover;
-    }
+    .leader-photo img{ width:100%; height:100%; object-fit: cover; }
     .leader-head{
       display:flex;
       align-items:flex-start;
       justify-content:space-between;
       gap: 12px;
+      flex-wrap: wrap; /* ✅ prevent overflow */
+      min-width: 0;
     }
     .leader-head h3{
       font-size: 1.2rem;
@@ -597,6 +595,8 @@
     .leader-desc{
       color: var(--muted);
       font-size: .96rem;
+      word-break: break-word;
+      overflow-wrap: anywhere;
     }
     .leader-tags{
       margin-top: 14px;
@@ -615,21 +615,42 @@
       color: var(--muted2);
       font-size: .9rem;
       white-space: nowrap;
+      max-width: 100%;
     }
     .tagpill i{ color: var(--accent); }
 
-    .methods-title{
-      margin-bottom: 8px;
-    }
+    .methods-title{ margin-bottom: 8px; }
     .methods-desc{
       color: var(--muted);
       margin-bottom: 14px;
       font-size: .96rem;
     }
 
+    @media (prefers-reduced-motion:no-preference){
+      .fade-up{ opacity:0; transform: translateY(10px); animation: fadeUp .9s ease forwards; }
+      .delay-1{ animation-delay:.08s; }
+      .delay-2{ animation-delay:.16s; }
+      .delay-3{ animation-delay:.24s; }
+      @keyframes fadeUp{ to{ opacity:1; transform: translateY(0);} }
+    }
+
+    @media (min-width: 860px){
+      .brand .tag{ display:inline; }
+    }
+
+    /* ✅ 原本的 RWD（保留） */
+    @media (max-width: 920px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      .hero-visual{ min-height: 420px; }
+      .two-col{ grid-template-columns: 1fr; }
+      .menu{ display:none; }
+    }
     @media (max-width: 520px){
       .leader-grid{ grid-template-columns: 1fr; }
       .leader-photo{ width:100%; height: 280px; }
+      .leader-head .tagpill{ margin-left: 0; }
+      .leader-tags{ gap: 8px; }
+      .tagpill{ padding: 9px 10px; font-size: .88rem; }
     }
 
     footer{
@@ -646,22 +667,43 @@
       filter: drop-shadow(0 10px 22px rgba(0,0,0,.45));
     }
 
-    @media (prefers-reduced-motion:no-preference){
-      .fade-up{ opacity:0; transform: translateY(10px); animation: fadeUp .9s ease forwards; }
-      .delay-1{ animation-delay:.08s; }
-      .delay-2{ animation-delay:.16s; }
-      .delay-3{ animation-delay:.24s; }
-      @keyframes fadeUp{ to{ opacity:1; transform: translateY(0);} }
+    /* ===========================
+       ✅ Mobile layout fixes
+       =========================== */
+    @media (max-width: 720px){
+      .nav{ inset: 10px 0 auto 0; }
+      .nav .bar{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px 12px;
+        border-radius: 22px;
+      }
+
+      .brand{ flex: 1 1 auto; min-width: 0; }
+      .brand .name{ font-size: 1rem; }
+      .brand .tag{ display: none !important; }
+
+      .nav-right{
+        flex: 1 1 100%;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .nav-socials{ display: none; }
+
+      .btn-line{
+        padding: 12px 14px;
+        font-size: .9rem;
+      }
+
+      .lang-switch{ padding: 3px; }
+      .lang-btn{ padding: 7px 9px; font-size: .88rem; }
     }
 
-    @media (min-width: 860px){
-      .brand .tag{ display:inline; }
-    }
-    @media (max-width: 920px){
-      .hero-grid{ grid-template-columns: 1fr; }
-      .hero-visual{ min-height: 420px; }
-      .two-col{ grid-template-columns: 1fr; }
-      .menu{ display:none; }
+    @media (max-width: 420px){
+      .btn-line .line-text{ display:none; }
+      .btn-line{ padding: 11px 12px; }
     }
   </style>
 </head>
@@ -711,7 +753,7 @@
         </div>
 
         <a class="btn btn-line" href="https://line.me/ti/p/aOCp9yqeqG" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-line"></i> LINE
+          <i class="fa-brands fa-line"></i> <span class="line-text">LINE</span>
         </a>
       </div>
     </div>
@@ -1128,13 +1170,12 @@
               <p class="leader-desc">
                 <span data-i18n data-lang="zh">
                   專注於「把音樂做成氣氛、把活動做成記憶」。服務內容不只演奏，而是用專業流程完成活動音樂設計：依場地與來賓互動需求規劃編制，設計歌單與節奏，並協調音控與舞台執行，確保每個段落都準確落點。
-無論是婚禮迎賓、酒會、開幕、品牌發表或企業晚宴，MileSpace 都能提供穩定、具美感且可控的現場呈現，讓活動主軸更清晰，現場氛圍更有品味。
+                  無論是婚禮迎賓、酒會、開幕、品牌發表或企業晚宴，MileSpace 都能提供穩定、具美感且可控的現場呈現，讓活動主軸更清晰，現場氛圍更有品味。
                 </span>
                 <span data-i18n data-lang="en">
                   We turn music into atmosphere and events into memories.
-Beyond performance, we design live music through a clear professional workflow—tailoring the lineup, setlist, and pacing to the venue and audience, while coordinating sound and stage execution.
-
-From weddings and cocktail parties to brand launches and corporate events, MileSpace delivers a refined, reliable live experience that elevates the atmosphere and keeps every moment on point.
+                  Beyond performance, we design live music through a clear professional workflow—tailoring the lineup, setlist, and pacing to the venue and audience, while coordinating sound and stage execution.
+                  From weddings and cocktail parties to brand launches and corporate events, MileSpace delivers a refined, reliable live experience that elevates the atmosphere and keeps every moment on point.
                 </span>
               </p>
 
