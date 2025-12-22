@@ -40,7 +40,6 @@
       letter-spacing:.02em;
       overflow-x:hidden;
 
-      /* ✅ 全站背景 */
       background:
         radial-gradient(900px 600px at 15% 15%, rgba(226,184,112,.14), transparent 60%),
         radial-gradient(900px 600px at 85% 30%, rgba(241,211,154,.08), transparent 60%),
@@ -126,7 +125,6 @@
       color:var(--text);
     }
 
-    /* --- ✅ 頁首社群圖示樣式 --- */
     .nav-right{
       display:flex;
       align-items:center;
@@ -180,7 +178,7 @@
       background: linear-gradient(135deg, var(--accent), var(--accent2));
     }
 
-    /* ✅ i18n: 用 data-i18n 切換文字（不影響排版） */
+    /* ✅ i18n */
     [data-i18n][data-lang="en"]{ display:none; }
     html[lang="en"] [data-i18n][data-lang="zh"]{ display:none; }
     html[lang="en"] [data-i18n][data-lang="en"]{ display:inline; }
@@ -256,7 +254,6 @@
     }
     .kicker i{ color: var(--accent); }
 
-    /* HERO TITLE */
     .hero-title{
       margin-bottom: 14px;
       line-height: 1.12;
@@ -311,7 +308,7 @@
     }
     .pill i{ color: var(--accent); }
 
-    /* --- Hero visual / Carousel --- */
+    /* --- Hero visual --- */
     .hero-visual{
       position:relative;
       border-radius: var(--radius2);
@@ -336,7 +333,7 @@
       z-index:2;
     }
 
-    /* ✅ 輪播主視覺 */
+    /* Carousel */
     .carousel{ position:absolute; inset:0; z-index:1; }
     .carousel-track{ position:absolute; inset:0; }
     .carousel-slide{
@@ -431,7 +428,7 @@
     .visual-card h4{ font-size:1rem; margin-bottom:4px; }
     .visual-card p{ color: var(--muted2); font-size:.92rem; }
 
-    /* --- ✅ 行事曆區塊樣式 --- */
+    /* Calendar */
     .calendar-wrapper {
       background: rgba(10, 10, 10, 0.4);
       border: 1px solid var(--line);
@@ -442,12 +439,12 @@
     }
     .calendar-container {
       position: relative;
-      padding-bottom: 75%; /* 電腦版高度比例 */
+      padding-bottom: 75%;
       height: 0;
       overflow: hidden;
     }
     @media (max-width: 768px) {
-      .calendar-container { padding-bottom: 120%; } /* 手機版拉高一點方便閱讀 */
+      .calendar-container { padding-bottom: 120%; }
     }
     .calendar-container iframe {
       position: absolute;
@@ -456,7 +453,7 @@
       filter: invert(90%) hue-rotate(180deg) brightness(0.95);
     }
 
-    /* --- Sections --- */
+    /* Sections */
     section{ padding: 92px 0; position:relative; }
     .section-head{ text-align:center; margin-bottom: 44px; }
     .section-head .eyebrow{
@@ -477,6 +474,7 @@
     }
     .section-head p{ color: var(--muted); max-width: 72ch; margin:0 auto; }
 
+    /* ✅ grid baseline */
     .grid{
       display:grid;
       grid-template-columns: repeat(12, 1fr);
@@ -489,6 +487,7 @@
       overflow:hidden;
       box-shadow: var(--shadowSoft);
       transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease;
+      min-width: 0;
     }
     .card:hover{
       transform: translateY(-6px);
@@ -499,6 +498,7 @@
     .card .top{
       display:flex; align-items:center; gap:12px;
       margin-bottom:12px;
+      min-width: 0;
     }
     .badge-icon{
       width:44px; height:44px; border-radius:14px;
@@ -509,8 +509,9 @@
       box-shadow: 0 10px 30px rgba(0,0,0,.25);
       flex:0 0 auto;
     }
-    .card h3{ font-size:1.15rem; letter-spacing:.04em; }
+    .card h3{ font-size:1.15rem; letter-spacing:.04em; min-width:0; }
     .card p{ color: var(--muted); margin: 8px 0 0; font-size:.98rem; }
+
     .list{
       margin-top: 14px;
       color: var(--muted2);
@@ -524,8 +525,15 @@
       border-radius: 12px;
       border:1px solid rgba(255,255,255,.08);
       background: rgba(255,255,255,.02);
+      min-width: 0;
     }
+    .list span{ min-width:0; }
     .list i{ color: var(--accent); margin-top:2px; }
+    /* ✅ prevent long text overflow in cards */
+    .card, .card *{
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
 
     .col-4{ grid-column: span 4; }
     .col-6{ grid-column: span 6; }
@@ -555,7 +563,7 @@
       align-items:stretch;
     }
 
-    /* ✅ Team re-layout */
+    /* Team */
     .team-card{ padding: 26px 24px; }
     .leader-grid{
       display:grid;
@@ -579,7 +587,7 @@
       align-items:flex-start;
       justify-content:space-between;
       gap: 12px;
-      flex-wrap: wrap; /* ✅ prevent overflow */
+      flex-wrap: wrap;
       min-width: 0;
     }
     .leader-head h3{
@@ -626,33 +634,6 @@
       font-size: .96rem;
     }
 
-    @media (prefers-reduced-motion:no-preference){
-      .fade-up{ opacity:0; transform: translateY(10px); animation: fadeUp .9s ease forwards; }
-      .delay-1{ animation-delay:.08s; }
-      .delay-2{ animation-delay:.16s; }
-      .delay-3{ animation-delay:.24s; }
-      @keyframes fadeUp{ to{ opacity:1; transform: translateY(0);} }
-    }
-
-    @media (min-width: 860px){
-      .brand .tag{ display:inline; }
-    }
-
-    /* ✅ 原本的 RWD（保留） */
-    @media (max-width: 920px){
-      .hero-grid{ grid-template-columns: 1fr; }
-      .hero-visual{ min-height: 420px; }
-      .two-col{ grid-template-columns: 1fr; }
-      .menu{ display:none; }
-    }
-    @media (max-width: 520px){
-      .leader-grid{ grid-template-columns: 1fr; }
-      .leader-photo{ width:100%; height: 280px; }
-      .leader-head .tagpill{ margin-left: 0; }
-      .leader-tags{ gap: 8px; }
-      .tagpill{ padding: 9px 10px; font-size: .88rem; }
-    }
-
     footer{
       padding: 36px 0 60px;
       border-top: 1px solid rgba(255,255,255,.08);
@@ -667,9 +648,27 @@
       filter: drop-shadow(0 10px 22px rgba(0,0,0,.45));
     }
 
-    /* ===========================
-       ✅ Mobile layout fixes
-       =========================== */
+    @media (prefers-reduced-motion:no-preference){
+      .fade-up{ opacity:0; transform: translateY(10px); animation: fadeUp .9s ease forwards; }
+      .delay-1{ animation-delay:.08s; }
+      .delay-2{ animation-delay:.16s; }
+      .delay-3{ animation-delay:.24s; }
+      @keyframes fadeUp{ to{ opacity:1; transform: translateY(0);} }
+    }
+
+    @media (min-width: 860px){
+      .brand .tag{ display:inline; }
+    }
+
+    /* ✅ Desktop -> Tablet */
+    @media (max-width: 920px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      .hero-visual{ min-height: 420px; }
+      .two-col{ grid-template-columns: 1fr; }
+      .menu{ display:none; }
+    }
+
+    /* ✅ Mobile fixes: nav */
     @media (max-width: 720px){
       .nav{ inset: 10px 0 auto 0; }
       .nav .bar{
@@ -679,7 +678,6 @@
         padding: 10px 12px;
         border-radius: 22px;
       }
-
       .brand{ flex: 1 1 auto; min-width: 0; }
       .brand .name{ font-size: 1rem; }
       .brand .tag{ display: none !important; }
@@ -689,21 +687,53 @@
         justify-content: space-between;
         gap: 10px;
       }
-
       .nav-socials{ display: none; }
-
-      .btn-line{
-        padding: 12px 14px;
-        font-size: .9rem;
-      }
+      .btn-line{ padding: 12px 14px; font-size: .9rem; }
 
       .lang-switch{ padding: 3px; }
       .lang-btn{ padding: 7px 9px; font-size: .88rem; }
     }
-
     @media (max-width: 420px){
       .btn-line .line-text{ display:none; }
       .btn-line{ padding: 11px 12px; }
+    }
+
+    /* ===========================
+       ✅ 你指定的兩個區塊（品牌定位/商演）手機排版修正
+       - 把 col-4 卡片改成單欄
+       - 內距/標題/清單更好讀
+       - 避免 hover 位移在手機造成「看起來跑版」
+       =========================== */
+    @media (max-width: 720px){
+      section{ padding: 72px 0; }
+      .section-head{ margin-bottom: 30px; }
+      .section-head p{ max-width: 60ch; }
+
+      /* ✅ grid 在手機變單欄，避免 12 欄壓縮造成字擠、卡片歪 */
+      .grid{ grid-template-columns: 1fr; gap: 14px; }
+      .col-4,.col-6,.col-12{ grid-column: auto; }
+
+      /* ✅ 卡片內距與內容層級 */
+      .card .inner{ padding: 18px 16px; }
+      .badge-icon{ width:42px; height:42px; border-radius: 14px; }
+      .card h3{ font-size: 1.06rem; line-height: 1.25; }
+      .card p{ font-size: .97rem; }
+
+      /* ✅ 清單項目更像「段落」 */
+      .list{ gap:10px; }
+      .list div{ padding: 12px 12px; }
+
+      /* ✅ 手機不要 hover 位移（會讓你以為跑版） */
+      .card:hover{ transform:none; box-shadow: var(--shadowSoft); }
+    }
+
+    /* ✅ 更小螢幕再收一點 */
+    @media (max-width: 420px){
+      .card .top{ gap:10px; }
+      .card .inner{ padding: 16px 14px; }
+      .badge-icon{ width:40px; height:40px; }
+      .card h3{ font-size: 1.02rem; }
+      .list div{ padding: 11px 11px; }
     }
   </style>
 </head>
@@ -1143,7 +1173,6 @@
       </div>
 
       <div class="two-col">
-        <!-- Leader -->
         <div class="card team-card">
           <div class="leader-grid">
             <div class="leader-photo">
@@ -1194,7 +1223,6 @@
           </div>
         </div>
 
-        <!-- Methods -->
         <div class="card team-card">
           <div class="top">
             <div class="badge-icon"><i class="fa-solid fa-compass-drafting"></i></div>
@@ -1282,7 +1310,6 @@
       let timer = null;
       const INTERVAL = 5000;
 
-      // build dots
       slides.forEach((_, i) => {
         const d = document.createElement('span');
         d.className = 'dot' + (i === 0 ? ' is-active' : '');
@@ -1320,11 +1347,9 @@
       if(nextBtn) nextBtn.addEventListener('click', next);
       if(prevBtn) prevBtn.addEventListener('click', prev);
 
-      // pause on hover
       root.addEventListener('mouseenter', stop);
       root.addEventListener('mouseleave', start);
 
-      // touch swipe
       let x0 = null;
       root.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, {passive:true});
       root.addEventListener('touchend', (e) => {
@@ -1359,7 +1384,7 @@
 
       btns.forEach(btn => {
         btn.addEventListener('click', () => {
-          const lang = btn.dataset.lang; // 'zh' | 'en'
+          const lang = btn.dataset.lang;
           localStorage.setItem(KEY, lang);
           apply(lang);
         });
