@@ -57,9 +57,9 @@
       background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
     }
 
-    /* i18n 顯示控制 */
-    [lang="en"] .zh-only { display: none; }
-    [lang="zh-TW"] .en-only { display: none; }
+    /* ✅ 多語系顯示控制修正 */
+    html[lang="en"] .zh-only { display: none !important; }
+    html[lang="zh-TW"] .en-only { display: none !important; }
 
     .container { width: min(var(--max), 92%); margin-inline: auto; }
 
@@ -224,13 +224,14 @@
       .events-toolbar { justify-content: center; text-align: center; }
     }
 
-    .reveal { opacity: 0; transform: translateY(20px); transition: 0.8s ease-out; }
+    /* ✅ 動畫機制強化 */
+    .reveal { opacity: 0; transform: translateY(20px); transition: 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
     .reveal.active { opacity: 1; transform: translateY(0); }
 
   </style>
 </head>
 
-<body lang="zh-TW">
+<body>
 
   <nav class="nav">
     <div class="bar">
@@ -571,15 +572,8 @@
   </script>
 
   <script>
-    // --- 捲動動畫 ---
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    // --- 語言切換邏輯 ---
+    // ✅ 強化多語系切換
     function setLang(lang) {
-      document.body.setAttribute('lang', lang);
       document.documentElement.setAttribute('lang', lang);
       
       const btnZh = document.getElementById('btn-zh');
@@ -594,9 +588,26 @@
       }
       
       fetchEvents(); 
+      // 切換語系後重新觸發動畫檢查
+      setTimeout(() => {
+          checkReveal();
+      }, 100);
     }
 
-    // --- 照片輪播邏輯 ---
+    // ✅ 捲動動畫機制
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { 
+          if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+          }
+      });
+    }, { threshold: 0.1 });
+
+    function checkReveal() {
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }
+
+    // ✅ 照片輪播邏輯
     (function(){
       const root = document.getElementById('heroCarousel');
       const slides = Array.from(root.querySelectorAll('.carousel-slide'));
@@ -628,13 +639,13 @@
       start();
     })();
 
-    // --- Google Calendar API ---
+    // ✅ Google Calendar API
     async function fetchEvents() {
       const API_KEY = "AIzaSyCGilolzeDFtAUJ6xcZYg4PNxupQQh2kz4"; 
       const CAL_ID  = "12e1215dc9c046261a270c6c7c4ad1ba28787f4acf3fbb5e52b615f529591b6b@group.calendar.google.com";
       const grid = document.getElementById("eventsGrid");
       const status = document.getElementById("eventsStatus");
-      const lang = document.body.getAttribute('lang') || 'zh-TW';
+      const lang = document.documentElement.getAttribute('lang') || 'zh-TW';
 
       status.innerText = lang === 'en' ? "Syncing Taichung Live Schedule..." : "正在為您同步台中最新爵士行程...";
       const timeMin = new Date().toISOString();
@@ -680,7 +691,11 @@
       }
     }
     
-    window.onload = fetchEvents;
+    // 初始化執行
+    window.onload = () => {
+        fetchEvents();
+        checkReveal();
+    };
   </script>
 
 </body>
