@@ -3,1758 +3,684 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MileSpace｜爵士現場 × 商演策劃 × 婚禮樂團 × jazz bar</title>
+  
+  <!-- ✅ SEO 核心標籤 - 針對商演與遊客雙向優化 -->
+  <title>MileSpace｜台中爵士樂團推薦：婚禮樂團、商演策劃、台中必訪爵士酒吧音樂節</title>
+  <meta name="description" content="尋找台中必去的爵士現場？MileSpace 專注於台中現場演出、商演樂團預約與婚禮樂團策劃。不論是觀光遊客尋找台中酒吧夜生活，或是企業新人需要專業音樂活動設計，我們如爵士音樂節般的專業編制與品酒會服務，讓音樂成為活動的完美記憶。">
+  <meta name="keywords" content="台中爵士樂團, 台中婚禮樂團推薦, 台中商演樂團, 爵士酒吧, 台中必去, 爵士音樂節, 台中夜生活, 活動音樂策劃, 爵士品酒會, MileSpace, 專業音響整合, Taichung Nightlife, Taichung Jazz Band">
+  <link rel="canonical" href="https://milespace-jazz.com/" />
+
+  <!-- ✅ Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MileSpace｜台中爵士現場策劃：商演、婚禮、酒吧氛圍整合首選" />
+  <meta property="og:description" content="把音樂做成氣氛，把活動做成記憶。台中必去的爵士現場體驗，專為婚禮、商演與觀光遊客打造的音樂盛宴。" />
+  <meta property="og:url" content="https://milespace-jazz.com/" />
+  <meta property="og:site_name" content="MileSpace Jazz" />
+  <meta property="og:image" content="https://i.imgur.com/FH7qgm1.jpeg" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MileSpace｜台中爵士樂團與酒吧氛圍策劃" />
+  <meta name="twitter:description" content="台中專業爵士現場，企業商演與婚禮樂團首選。觀光客必訪的微醺爵士吧體驗。" />
+  <meta name="twitter:image" content="https://i.imgur.com/FH7qgm1.jpeg" />
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    :root{
-      --bg:#070707;
-      --bg2:#0b0b0b;
-      --text:#f6f6f6;
-      --muted:rgba(246,246,246,.72);
-      --muted2:rgba(246,246,246,.55);
-      --line:rgba(255,255,255,.10);
-      --glass:rgba(255,255,255,.06);
-      --glass2:rgba(255,255,255,.08);
-      --accent:#E2B870;           /* champagne gold */
-      --accent2:#f1d39a;
-      --line-green: #06C755;      /* LINE Green */
-      --shadow: 0 18px 60px rgba(0,0,0,.55);
-      --shadowSoft: 0 14px 40px rgba(0,0,0,.35);
-      --radius: 18px;
-      --radius2: 28px;
+    :root {
+      --bg: #070707;
+      --bg-alt: #0b0b0b;
+      --text: #f6f6f6;
+      --muted: rgba(246,246,246,.72);
+      --muted-low: rgba(246,246,246,.45);
+      --line: rgba(255,255,255,.1);
+      --accent: #E2B870;           /* 香檳金 */
+      --accent-bright: #f1d39a;
+      --line-green: #06C755;
+      --radius: 20px;
+      --radius-lg: 28px;
       --max: 1180px;
     }
 
-    *{ box-sizing:border-box; margin:0; padding:0; }
-    html{ scroll-behavior:smooth; }
-    body{
-      font-family:"Noto Sans TC", system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      color:var(--text);
-      line-height:1.75;
-      letter-spacing:.02em;
-      overflow-x:hidden;
-
-      background:
-        radial-gradient(900px 600px at 15% 15%, rgba(226,184,112,.14), transparent 60%),
-        radial-gradient(900px 600px at 85% 30%, rgba(241,211,154,.08), transparent 60%),
-        radial-gradient(1200px 800px at 50% 10%, rgba(0,0,0,.25), rgba(0,0,0,.78)),
-        linear-gradient(180deg, rgba(7,7,7,.88), rgba(11,11,11,.96)),
-        url("https://i.imgur.com/Fy3HKXi.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
-
-    a{ color:inherit; text-decoration:none; transition: .3s ease; }
-    img{ max-width:100%; display:block; }
-    .container{ width:min(var(--max), 92%); margin-inline:auto; }
-
-    /* --- Top Nav --- */
-    .nav{
-      position:fixed; inset:14px 0 auto 0;
-      z-index:999;
-      pointer-events:none;
-    }
-    .nav .bar{
-      pointer-events:auto;
-      width:min(var(--max), 92%);
-      margin:0 auto;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      padding:12px 14px;
-      border:1px solid var(--line);
-      background:rgba(10,10,10,.55);
-      backdrop-filter: blur(10px);
-      border-radius: 999px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.35);
-    }
-    .brand{
-      display:flex; align-items:center; gap:10px;
-      padding-left:6px;
-      min-width: 0;
-    }
-    .brand-logo{
-      height: 34px;
-      width: auto;
-      display: block;
-      object-fit: contain;
-      filter: drop-shadow(0 10px 22px rgba(0,0,0,.45));
-      flex: 0 0 auto;
-    }
-    @media (max-width: 420px){
-      .brand-logo{ height: 30px; }
-    }
-    .brand .name{
-      font-family:"Playfair Display", serif;
-      letter-spacing:.06em;
-      font-weight:600;
-      font-size:1.05rem;
-      white-space: nowrap;
-    }
-    .brand .tag{
-      font-size:.82rem; color:var(--muted2);
-      border-left:1px solid var(--line);
-      padding-left:10px;
-      margin-left:6px;
-      display:none;
-      white-space: nowrap;
-    }
-
-    .menu{
-      display:flex; gap:14px; align-items:center;
-      color:var(--muted);
-      font-size:.92rem;
-    }
-    .menu a{
-      padding:8px 10px;
-      border-radius:999px;
-      transition:.25s ease;
-      white-space: nowrap;
-    }
-    .menu a:hover{
-      background:rgba(255,255,255,.06);
-      color:var(--text);
-    }
-
-    /* --- Right cluster --- */
-    .nav-right{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      flex: 0 0 auto;
-    }
-    .nav-socials {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-right: 2px;
-    }
-    .nav-socials a {
-      font-size: 1.2rem;
-      color: var(--muted);
-    }
-    .nav-socials a:hover {
-      color: var(--accent);
-      transform: translateY(-2px);
-    }
-
-    /* ✅ Language Switch */
-    .lang-switch{
-      display:flex;
-      align-items:center;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.04);
-      border-radius: 999px;
-      padding: 4px;
-      backdrop-filter: blur(8px);
-    }
-    .lang-btn{
-      border:0;
-      background: transparent;
-      color: var(--muted);
-      padding: 8px 10px;
-      border-radius: 999px;
-      cursor:pointer;
-      font-weight:700;
-      font-size:.9rem;
-      letter-spacing:.04em;
-      transition: .25s ease;
-      white-space: nowrap;
-    }
-    .lang-btn:hover{
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: "Noto Sans TC", system-ui, -apple-system, sans-serif;
       color: var(--text);
-      background: rgba(255,255,255,.06);
-    }
-    .lang-btn.is-active{
-      color:#0b0b0b;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-    }
-
-    /* ✅ i18n: 用 data-i18n 切換文字（不影響排版） */
-    [data-i18n][data-lang="en"]{ display:none; }
-    html[lang="en"] [data-i18n][data-lang="zh"]{ display:none; }
-    html[lang="en"] [data-i18n][data-lang="en"]{ display:inline; }
-    html[lang="zh-TW"] [data-i18n][data-lang="zh"]{ display:inline; }
-
-    /* --- Buttons --- */
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:10px;
-      padding:14px 18px;
-      border-radius:999px;
-      font-weight:600;
-      letter-spacing:.02em;
-      transition: transform .25s ease, box-shadow .25s ease, background .25s ease, border-color .25s ease;
-      user-select:none;
-      white-space:nowrap;
-    }
-    .btn:active{ transform: translateY(1px); }
-    .btn-primary{
-      color:#0b0b0b;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 18px 55px rgba(226,184,112,.22);
-    }
-    .btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 26px 75px rgba(226,184,112,.28); }
-
-    .btn-line{
-      border:1px solid var(--line-green);
-      background: rgba(6, 199, 85, 0.05);
-      color: var(--line-green);
-    }
-    .btn-line:hover{
-      background: var(--line-green);
-      color: #fff;
-      transform: translateY(-2px);
+      background-color: var(--bg);
+      line-height: 1.75;
+      overflow-x: hidden;
+      background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
     }
 
-    .btn-ghost{
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.04);
-      backdrop-filter: blur(6px);
-      color:var(--text);
+    /* i18n 顯示控制 */
+    [lang="en"] .zh-only { display: none; }
+    [lang="zh-TW"] .en-only { display: none; }
+
+    .container { width: min(var(--max), 92%); margin-inline: auto; }
+
+    /* --- 導覽列 --- */
+    .nav { position: fixed; inset: 16px 0 auto 0; z-index: 1000; }
+    .nav .bar {
+      width: min(var(--max), 94%); margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 24px;
+      background: rgba(10, 10, 10, 0.85);
+      backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+      border: 1px solid var(--line); border-radius: 100px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
     }
-    .btn-ghost:hover{
-      border-color: rgba(226,184,112,.45);
-      background: rgba(255,255,255,.06);
-      transform: translateY(-2px);
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .brand img { height: 32px; filter: drop-shadow(0 0 10px rgba(226,184,112,0.3)); }
+    .brand .name { font-family: "Playfair Display", serif; font-weight: 700; letter-spacing: 0.05em; font-size: 1.2rem; }
+
+    .menu { display: flex; gap: 4px; }
+    .menu a { padding: 8px 16px; border-radius: 50px; font-size: 0.9rem; color: var(--muted); transition: 0.3s; }
+    .menu a:hover { color: var(--accent); background: rgba(255,255,255,0.05); }
+
+    .lang-switch {
+      display: flex; background: rgba(255,255,255,0.05); border-radius: 50px; padding: 4px; border: 1px solid var(--line); margin-right: 12px;
+    }
+    .lang-btn {
+      padding: 4px 12px; font-size: 0.75rem; border-radius: 50px; cursor: pointer; transition: 0.3s; color: var(--muted-low);
+    }
+    .lang-btn.active { background: var(--accent); color: #000; font-weight: 700; }
+
+    /* --- Hero Section --- */
+    header { padding: 160px 0 80px; position: relative; }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center;
+    }
+    .hero-kicker { color: var(--accent); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.2em; margin-bottom: 15px; }
+    .hero-title { font-size: clamp(2.4rem, 4.2vw, 4.2rem); line-height: 1.1; margin-bottom: 20px; font-family: "Playfair Display", serif; }
+    .hero-title span { color: var(--accent); font-style: italic; font-weight: 400; }
+    .hero-desc { color: var(--muted); font-size: 1.05rem; margin-bottom: 30px; max-width: 500px; }
+
+    .hero-visual {
+      position: relative; border-radius: var(--radius-lg); overflow: hidden;
+      border: 1px solid var(--line); height: 480px; box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+    }
+    .carousel { position: absolute; inset: 0; z-index: 1; }
+    .carousel-slide {
+      position: absolute; inset: 0; opacity: 0; transform: scale(1.05);
+      transition: opacity 0.8s ease, transform 1.2s ease;
+    }
+    .carousel-slide.is-active { opacity: 1; transform: scale(1); }
+    .carousel-slide img { width: 100%; height: 100%; object-fit: cover; }
+    .carousel-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.7)); z-index: 2; }
+    
+    .carousel-ui { position: absolute; bottom: 110px; left: 20px; right: 20px; z-index: 10; display: flex; justify-content: space-between; align-items: center; }
+    .carousel-dots { display: flex; gap: 8px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: 0.3s; }
+    .dot.is-active { width: 24px; border-radius: 10px; background: var(--accent); }
+    .cbtn { background: rgba(0,0,0,0.3); border: 1px solid var(--line); color: white; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(5px); display: grid; place-items: center; }
+
+    .visual-card {
+      position: absolute; bottom: 20px; left: 20px; right: 20px; z-index: 15;
+      background: rgba(10, 10, 10, 0.75); backdrop-filter: blur(12px);
+      padding: 20px; border-radius: 16px; border: 1px solid var(--line);
+      display: flex; gap: 15px; align-items: center;
+    }
+    .visual-card .icon { color: var(--accent); font-size: 1.5rem; }
+    .visual-card h4 { font-size: 0.95rem; margin-bottom: 4px; color: #fff; }
+    .visual-card p { font-size: 0.8rem; color: var(--muted); }
+
+    /* --- 活動行程 --- */
+    .section-events { padding-bottom: 60px; }
+    .section-head { margin-bottom: 40px; text-align: center; }
+    .section-head h2 { font-size: 2.5rem; font-family: "Playfair Display", serif; margin-bottom: 10px; }
+    .section-head p { color: var(--accent); font-weight: 500; letter-spacing: 0.1em; font-size: 0.9rem; }
+
+    .events-shell {
+      background: rgba(255,255,255,0.02); border: 1px solid var(--line);
+      border-radius: 24px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    }
+    .events-toolbar { 
+      padding: 18px 30px; border-bottom: 1px solid var(--line); 
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(255,255,255,0.02);
+      flex-wrap: wrap; gap: 15px;
+    }
+    .events-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; padding: 30px; }
+
+    .event-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+      border: 1px solid var(--line); border-radius: 18px;
+      overflow: hidden; transition: 0.4s ease;
+    }
+    .event-card:hover { transform: translateY(-8px); border-color: var(--accent); }
+    .event-body { padding: 24px; display: grid; grid-template-columns: 80px 1fr; gap: 20px; }
+    .date-badge {
+      height: 80px; background: rgba(226,184,112,0.12); border: 1px solid rgba(226,184,112,0.2);
+      border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--accent);
+    }
+    .date-badge .day { font-size: 1.8rem; font-weight: 700; line-height: 1; }
+    .date-badge .month { font-size: 0.8rem; text-transform: uppercase; }
+
+    /* --- Linktree CTA 強化區塊 --- */
+    .linktree-cta {
+        margin: 40px 0 100px; padding: 40px;
+        background: radial-gradient(circle at center, rgba(226,184,112,0.15), transparent);
+        border: 1px solid var(--accent); border-radius: var(--radius-lg);
+        text-align: center;
+        box-shadow: 0 0 50px rgba(226,184,112,0.1);
+    }
+    .linktree-cta h3 { font-size: 1.8rem; margin-bottom: 15px; font-family: "Playfair Display", serif; }
+    .linktree-cta p { color: var(--muted); margin-bottom: 25px; }
+    .btn-ticket {
+        padding: 16px 40px; font-size: 1.1rem; animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(226,184,112, 0.4); }
+        70% { box-shadow: 0 0 0 20px rgba(226,184,112, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(226,184,112, 0); }
     }
 
-    /* --- Hero --- */
-    header{
-      position:relative;
-      min-height: 100vh;
-      display:flex;
-      align-items:center;
-      padding: 120px 0 70px;
-      background: transparent !important;
-    }
-    .hero-grid{
-      display:grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap:40px;
-      align-items:center;
-    }
-    .kicker{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:8px 12px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      color: var(--muted);
-      font-size:.92rem;
-      margin-bottom:18px;
-    }
-    .kicker i{ color: var(--accent); }
+    /* --- 產品與服務 --- */
+    .section-services { padding: 120px 0; background: var(--bg-alt); }
+    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .service-card { padding: 40px 30px; background: rgba(255,255,255,0.02); border: 1px solid var(--line); border-radius: 20px; transition: 0.3s; }
+    .service-card:hover { border-color: var(--accent); background: rgba(255,255,255,0.04); }
+    .service-icon { font-size: 2.5rem; color: var(--accent); margin-bottom: 25px; display: block; }
+    .service-card h3 { font-size: 1.3rem; margin-bottom: 15px; }
+    .service-card p { font-size: 0.95rem; color: var(--muted); margin-bottom: 20px; }
+    .service-list { display: grid; gap: 10px; margin-top: 15px; }
+    .service-list div { display: flex; align-items: flex-start; gap: 10px; font-size: 0.85rem; color: var(--muted-low); }
+    .service-list i { color: var(--accent); font-size: 0.7rem; margin-top: 6px; }
 
-    .hero-title{
-      margin-bottom: 14px;
-      line-height: 1.12;
-      text-shadow: 0 18px 60px rgba(0,0,0,.55);
+    /* --- 團隊 --- */
+    .section-team { padding: 120px 0; }
+    .team-box { 
+      background: rgba(255,255,255,0.02); border: 1px solid var(--line); border-radius: 30px;
+      padding: 50px; display: grid; grid-template-columns: 240px 1fr; gap: 50px; align-items: start;
     }
-    .hero-title .hero-line1,
-    .hero-title .hero-line2{
-      display:block;
-      white-space: nowrap;
-    }
-    .hero-title .hero-line1{
-      font-family:"Playfair Display", serif;
-      font-size: clamp(2.4rem, 4.2vw, 4.2rem);
-      letter-spacing: .06em;
-      color: var(--text);
-    }
-    .hero-title .hero-line2{
-      font-family:"Noto Sans TC", sans-serif;
-      font-size: clamp(1.15rem, 1.7vw, 1.65rem);
-      font-weight: 700;
-      color: var(--accent);
-      letter-spacing: .08em;
-      margin-top: 10px;
-      text-shadow: 0 0 30px rgba(226,184,112,.18);
-    }
-    @media (max-width: 420px){
-      .hero-title .hero-line2{ white-space: normal; }
+    .team-photo { width: 240px; height: 320px; border-radius: 20px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+    .team-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .team-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .tag { padding: 5px 12px; background: rgba(255,255,255,0.05); border: 1px solid var(--line); border-radius: 100px; font-size: 0.75rem; color: var(--muted-low); }
+
+    /* 按鈕 */
+    .btn { padding: 14px 32px; border-radius: 100px; font-weight: 700; display: inline-flex; align-items: center; gap: 10px; transition: 0.3s; text-decoration: none; font-size: 0.95rem; border: none; cursor: pointer; }
+    .btn-gold { background: var(--accent); color: #000; }
+    .btn-gold:hover { background: var(--accent-bright); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(226,184,112,0.2); }
+    .btn-outline { border: 1px solid var(--line); color: white; background: transparent; }
+    .btn-outline:hover { background: rgba(255,255,255,0.05); }
+
+    .float-line { position: fixed; bottom: 35px; right: 35px; z-index: 999; width: 60px; height: 60px; border-radius: 50%; background: var(--line-green); color: white; display: grid; place-items: center; font-size: 30px; box-shadow: 0 10px 30px rgba(6, 199, 85, 0.4); text-decoration: none; transition: 0.3s; }
+    .float-line:hover { transform: scale(1.1); }
+
+    @media (max-width: 992px) {
+      .hero-grid { grid-template-columns: 1fr; text-align: center; }
+      .hero-visual { height: 400px; }
+      .hero-desc { margin-inline: auto; }
+      .service-grid { grid-template-columns: 1fr; }
+      .team-box { grid-template-columns: 1fr; padding: 30px; text-align: center; }
+      .team-photo { margin-inline: auto; }
+      .menu { display: none; }
+      .events-toolbar { justify-content: center; text-align: center; }
     }
 
-    .hero-desc{
-      color: var(--muted);
-      font-size: 1.05rem;
-      max-width: 52ch;
-      margin-bottom: 26px;
-    }
-    .cta-row{
-      display:flex; flex-wrap:wrap; gap:12px;
-      margin-bottom: 26px;
-    }
-    .trust-row{
-      display:flex; flex-wrap:wrap;
-      gap:12px;
-      color: var(--muted2);
-      font-size:.92rem;
-    }
-    .pill{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:10px 12px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-    }
-    .pill i{ color: var(--accent); }
+    .reveal { opacity: 0; transform: translateY(20px); transition: 0.8s ease-out; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
 
-    /* --- Hero visual / Carousel --- */
-    .hero-visual{
-      position:relative;
-      border-radius: var(--radius2);
-      overflow:hidden;
-      border:1px solid var(--line);
-      background:
-        radial-gradient(800px 500px at 20% 20%, rgba(226,184,112,.14), transparent 55%),
-        radial-gradient(900px 550px at 80% 40%, rgba(255,255,255,.06), transparent 60%),
-        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      box-shadow: var(--shadow);
-      min-height: 480px;
-    }
-    .hero-visual::after{
-      content:"";
-      position:absolute; inset:0;
-      background:
-        radial-gradient(520px 320px at 70% 25%, rgba(226,184,112,.18), transparent 60%),
-        radial-gradient(520px 320px at 25% 80%, rgba(255,255,255,.08), transparent 62%);
-      pointer-events:none;
-      mix-blend-mode: screen;
-      opacity:.75;
-      z-index:2;
-    }
-
-    /* ✅ Carousel */
-    .carousel{ position:absolute; inset:0; z-index:1; }
-    .carousel-track{ position:absolute; inset:0; }
-    .carousel-slide{
-      position:absolute; inset:0;
-      opacity:0;
-      transform: scale(1.02);
-      transition: opacity .9s ease, transform 1.2s ease;
-      will-change: opacity, transform;
-    }
-    .carousel-slide.is-active{ opacity:1; transform: scale(1); }
-    .carousel-slide img{
-      width:100%; height:100%;
-      object-fit: cover;
-      transform: translateZ(0);
-      filter: saturate(1.05) contrast(1.02);
-    }
-
-    .carousel-overlay{
-      position:absolute; inset:0; z-index:1;
-      background:
-        radial-gradient(800px 500px at 30% 30%, rgba(0,0,0,.25), rgba(0,0,0,.75)),
-        linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.72));
-      pointer-events:none;
-    }
-
-    .carousel-ui{
-      position:absolute;
-      inset:auto 16px 106px 16px;
-      z-index:3;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-    }
-    .carousel-dots{ display:flex; gap:8px; align-items:center; }
-    .dot{
-      width:8px; height:8px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.35);
-      background: rgba(255,255,255,.14);
-      opacity:.75;
-      transition: transform .25s ease, background .25s ease, border-color .25s ease, width .25s ease;
-    }
-    .dot.is-active{
-      width:22px;
-      background: rgba(226,184,112,.85);
-      border-color: rgba(226,184,112,.85);
-      opacity:1;
-    }
-    .carousel-btns{ display:flex; gap:10px; }
-    .cbtn{
-      width:40px; height:40px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.18);
-      background: rgba(10,10,10,.35);
-      backdrop-filter: blur(8px);
-      display:grid;
-      place-items:center;
-      color: rgba(255,255,255,.92);
-      transition: transform .2s ease, border-color .2s ease, background .2s ease;
-      cursor:pointer;
-      user-select:none;
-    }
-    .cbtn:hover{
-      transform: translateY(-2px);
-      border-color: rgba(226,184,112,.55);
-      background: rgba(10,10,10,.50);
-    }
-
-    .visual-card{
-      position:absolute;
-      inset:auto 18px 18px 18px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(10,10,10,.62);
-      backdrop-filter: blur(10px);
-      border-radius: 16px;
-      padding:16px 16px;
-      box-shadow: var(--shadowSoft);
-      display:flex;
-      gap:14px;
-      align-items:flex-start;
-      z-index:4;
-    }
-    .visual-card .icon{
-      width:44px; height:44px; border-radius:12px;
-      background: rgba(226,184,112,.12);
-      border:1px solid rgba(226,184,112,.25);
-      display:grid; place-items:center;
-      color: var(--accent);
-      flex:0 0 auto;
-    }
-    .visual-card h4{ font-size:1rem; margin-bottom:4px; }
-    .visual-card p{ color: var(--muted2); font-size:.92rem; }
-
-    /* --- Sections --- */
-    section{ padding: 92px 0; position:relative; }
-    .section-head{ text-align:center; margin-bottom: 44px; }
-    .section-head .eyebrow{
-      display:inline-flex; align-items:center; gap:10px;
-      color: var(--muted2);
-      font-size:.92rem;
-      padding:8px 12px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      margin-bottom:14px;
-    }
-    .section-head h2{
-      font-size: clamp(1.7rem, 2.6vw, 2.4rem);
-      letter-spacing:.05em;
-      margin-bottom: 10px;
-      text-shadow: 0 18px 60px rgba(0,0,0,.45);
-    }
-    .section-head p{ color: var(--muted); max-width: 72ch; margin:0 auto; }
-
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 18px;
-    }
-    .card{
-      border:1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
-      border-radius: var(--radius);
-      overflow:hidden;
-      box-shadow: var(--shadowSoft);
-      transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease;
-      min-width:0;
-    }
-    .card:hover{
-      transform: translateY(-6px);
-      border-color: rgba(226,184,112,.38);
-      box-shadow: 0 22px 70px rgba(0,0,0,.55);
-    }
-    .card .inner{ padding: 22px 22px; }
-    .card .top{
-      display:flex; align-items:center; gap:12px;
-      margin-bottom:12px;
-      min-width:0;
-    }
-    .badge-icon{
-      width:44px; height:44px; border-radius:14px;
-      background: rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.12);
-      display:grid; place-items:center;
-      color: var(--accent);
-      box-shadow: 0 10px 30px rgba(0,0,0,.25);
-      flex:0 0 auto;
-    }
-    .card h3{ font-size:1.15rem; letter-spacing:.04em; min-width:0; }
-    .card p{ color: var(--muted); margin: 8px 0 0; font-size:.98rem; }
-    .list{
-      margin-top: 14px;
-      color: var(--muted2);
-      font-size:.95rem;
-      display:grid;
-      gap:8px;
-    }
-    .list div{
-      display:flex; gap:10px; align-items:flex-start;
-      padding:10px 12px;
-      border-radius: 12px;
-      border:1px solid rgba(255,255,255,.08);
-      background: rgba(255,255,255,.02);
-    }
-    .list i{ color: var(--accent); margin-top:2px; }
-
-    .col-4{ grid-column: span 4; }
-    .col-6{ grid-column: span 6; }
-    .col-12{ grid-column: span 12; }
-
-    .cta{
-      border:1px solid rgba(226,184,112,.22);
-      background:
-        radial-gradient(700px 400px at 20% 20%, rgba(226,184,112,.18), transparent 60%),
-        radial-gradient(700px 400px at 80% 60%, rgba(255,255,255,.06), transparent 60%),
-        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-      border-radius: 26px;
-      padding: 34px 28px;
-      box-shadow: var(--shadow);
-    }
-    .cta .row{
-      display:flex; align-items:center; justify-content:space-between; gap:18px;
-      flex-wrap:wrap;
-    }
-    .cta h3{ font-size: 1.35rem; letter-spacing:.04em; margin-bottom:6px; }
-    .cta p{ color: var(--muted); }
-
-    .two-col{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      align-items:stretch;
-    }
-
-    /* --- Calendar (embed) --- */
-    .calendar-wrapper {
-      background: rgba(10, 10, 10, 0.4);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadowSoft);
-      margin-top: 30px;
-    }
-    .calendar-container {
-      position: relative;
-      padding-bottom: 75%;
-      height: 0;
-      overflow: hidden;
-    }
-    @media (max-width: 768px) {
-      .calendar-container { padding-bottom: 120%; }
-    }
-    .calendar-container iframe {
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      border: 0;
-      filter: invert(90%) hue-rotate(180deg) brightness(0.95);
-    }
-
-    /* ✅ Events Cards (API) — Cleaner layout */
-    .events-shell{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(10,10,10,.38);
-      border-radius: var(--radius);
-      overflow:hidden;
-      box-shadow: var(--shadowSoft);
-      margin-top: 16px;
-    }
-
-    .events-toolbar{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      padding: 16px 18px;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-      background: rgba(10,10,10,.40);
-      backdrop-filter: blur(10px);
-    }
-
-    .events-toolbar .left{
-      display:flex;
-      flex-wrap:wrap;
-      align-items:center;
-      gap:10px;
-      min-width:0;
-    }
-
-    .events-pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding: 9px 12px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      color: var(--muted2);
-      font-size:.92rem;
-      white-space:nowrap;
-    }
-    .events-pill i{ color: var(--accent); }
-
-    .events-toolbar .status{
-      color: var(--muted2);
-      font-size: .92rem;
-      white-space: nowrap;
-    }
-
-    .events-grid{
-      display:grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 14px;
-      padding: 16px 16px 18px;
-    }
-
-    .event-card{
-      grid-column: span 4;
-      border:1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
-      border-radius: 18px;
-      overflow:hidden;
-      box-shadow: 0 14px 40px rgba(0,0,0,.35);
-      transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease;
-      min-width:0;
-    }
-    .event-card:hover{
-      transform: translateY(-6px);
-      border-color: rgba(226,184,112,.35);
-      box-shadow: 0 22px 70px rgba(0,0,0,.55);
-    }
-
-    .event-body{
-      display:grid;
-      grid-template-columns: 86px 1fr;
-      gap: 14px;
-      padding: 16px 16px 14px;
-    }
-
-    .event-rail{
-      border-right: 1px solid rgba(255,255,255,.08);
-      padding-right: 14px;
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-    }
-    .event-date{
-      border:1px solid rgba(226,184,112,.22);
-      background: rgba(226,184,112,.10);
-      border-radius: 14px;
-      padding: 10px 10px;
-    }
-    .event-date .dow{
-      color: rgba(246,246,246,.72);
-      font-size: .9rem;
-      letter-spacing:.02em;
-      margin-bottom: 2px;
-    }
-    .event-date .md{
-      font-weight: 900;
-      font-size: 1.15rem;
-      letter-spacing:.04em;
-      line-height: 1.1;
-    }
-    .event-time{
-      color: var(--muted2);
-      font-size: .92rem;
-      line-height: 1.25;
-      white-space: nowrap;
-      overflow:hidden;
-      text-overflow: ellipsis;
-    }
-
-    .event-content{ min-width:0; }
-    .event-title{
-      font-size: 1.08rem;
-      font-weight: 900;
-      letter-spacing:.03em;
-      margin-bottom: 8px;
-      color: var(--text);
-      display:-webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow:hidden;
-    }
-    .event-meta{
-      display:flex;
-      flex-wrap:wrap;
-      gap: 8px;
-      margin-bottom: 10px;
-    }
-    .emeta{
-      display:inline-flex;
-      align-items:center;
-      gap: 7px;
-      padding: 8px 10px;
-      border-radius: 999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      color: var(--muted2);
-      font-size: .9rem;
-      white-space: nowrap;
-      max-width: 100%;
-    }
-    .emeta i{ color: var(--accent); }
-
-    .event-desc{
-      color: var(--muted);
-      font-size: .95rem;
-      line-height: 1.7;
-      display:-webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow:hidden;
-      margin-bottom: 12px;
-    }
-
-    .event-footer{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 10px;
-      border-top: 1px solid rgba(255,255,255,.08);
-      padding: 12px 16px 14px;
-    }
-    .event-footer .small{
-      color: var(--muted2);
-      font-size: .9rem;
-      min-width:0;
-      white-space: nowrap;
-      overflow:hidden;
-      text-overflow: ellipsis;
-    }
-
-    .event-link{
-      display:inline-flex;
-      align-items:center;
-      gap: 8px;
-      padding: 10px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(226,184,112,.28);
-      background: rgba(226,184,112,.10);
-      color: var(--text);
-      font-weight: 800;
-      font-size: .92rem;
-      white-space: nowrap;
-    }
-    .event-link:hover{
-      background: rgba(226,184,112,.16);
-      transform: translateY(-1px);
-    }
-
-    .events-empty, .events-error{
-      grid-column: 1 / -1;
-      padding: 18px 16px;
-      border:1px dashed rgba(255,255,255,.16);
-      background: rgba(255,255,255,.03);
-      border-radius: 16px;
-      color: var(--muted);
-      text-align:center;
-    }
-
-    @media (max-width: 920px){
-      .event-card{ grid-column: span 6; }
-    }
-    @media (max-width: 560px){
-      .events-toolbar{ padding: 14px 14px; }
-      .events-grid{ padding: 14px 12px 16px; gap: 12px; }
-      .event-card{ grid-column: 1 / -1; }
-      .event-body{ grid-template-columns: 76px 1fr; padding: 14px 14px 12px; gap: 12px; }
-      .event-rail{ padding-right: 12px; }
-      .event-footer{ padding: 12px 14px 14px; }
-    }
-
-    /* ✅ Team re-layout */
-    .team-card{ padding: 26px 24px; }
-    .leader-grid{
-      display:grid;
-      grid-template-columns: 160px 1fr;
-      gap: 18px;
-      align-items: start;
-    }
-    .leader-photo{
-      width: 160px;
-      height: 210px;
-      border-radius: 16px;
-      overflow:hidden;
-      border: 1px solid rgba(226,184,112,.38);
-      box-shadow: 0 14px 40px rgba(0,0,0,.35);
-      background: rgba(0,0,0,.25);
-    }
-    .leader-photo img{ width:100%; height:100%; object-fit: cover; }
-    .leader-head{
-      display:flex;
-      align-items:flex-start;
-      justify-content:space-between;
-      gap: 12px;
-    }
-    .leader-head h3{
-      font-size: 1.2rem;
-      letter-spacing:.05em;
-      margin-bottom: 8px;
-    }
-    .leader-sub{
-      color: var(--muted2);
-      font-size: .92rem;
-      margin-bottom: 10px;
-    }
-    .leader-desc{
-      color: var(--muted);
-      font-size: .96rem;
-      white-space: pre-line;
-    }
-    .leader-tags{
-      margin-top: 14px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
-    .tagpill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:10px 12px;
-      border-radius: 999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      color: var(--muted2);
-      font-size: .9rem;
-      white-space: nowrap;
-    }
-    .tagpill i{ color: var(--accent); }
-
-    .methods-title{ margin-bottom: 8px; }
-    .methods-desc{ color: var(--muted); margin-bottom: 14px; font-size: .96rem; }
-
-    @media (max-width: 520px){
-      .leader-grid{ grid-template-columns: 1fr; }
-      .leader-photo{ width:100%; height: 280px; }
-    }
-
-    footer{
-      padding: 36px 0 60px;
-      border-top: 1px solid rgba(255,255,255,.08);
-      color: var(--muted2);
-      text-align:center;
-    }
-    .footer-logo{
-      height: 26px;
-      width: auto;
-      object-fit: contain;
-      opacity: .95;
-      filter: drop-shadow(0 10px 22px rgba(0,0,0,.45));
-    }
-
-    @media (prefers-reduced-motion:no-preference){
-      .fade-up{ opacity:0; transform: translateY(10px); animation: fadeUp .9s ease forwards; }
-      .delay-1{ animation-delay:.08s; }
-      .delay-2{ animation-delay:.16s; }
-      .delay-3{ animation-delay:.24s; }
-      @keyframes fadeUp{ to{ opacity:1; transform: translateY(0);} }
-    }
-
-    @media (min-width: 860px){
-      .brand .tag{ display:inline; }
-    }
-    @media (max-width: 920px){
-      .hero-grid{ grid-template-columns: 1fr; }
-      .hero-visual{ min-height: 420px; }
-      .two-col{ grid-template-columns: 1fr; }
-      .menu{ display:none; }
-    }
-    @media (max-width: 820px){
-      .col-4{ grid-column: span 12; }
-      .col-6{ grid-column: span 12; }
-    }
   </style>
 </head>
 
-<body>
+<body lang="zh-TW">
 
-  <div class="nav">
+  <nav class="nav">
     <div class="bar">
       <div class="brand">
-        <img class="brand-logo" src="https://i.imgur.com/lFKDTnf.png" alt="MileSpace Logo">
-        <div class="name">MileSpace</div>
-        <div class="tag">Live Jazz · Events · Booking</div>
+        <img src="https://i.imgur.com/lFKDTnf.png" alt="MileSpace Logo">
+        <span class="name">MileSpace</span>
       </div>
-
       <div class="menu">
-        <a href="#about">
-          <span data-i18n data-lang="zh">品牌定位</span>
-          <span data-i18n data-lang="en">About</span>
-        </a>
         <a href="#events">
-          <span data-i18n data-lang="zh">近期活動</span>
-          <span data-i18n data-lang="en">Schedule</span>
+          <span class="zh-only">現場活動</span>
+          <span class="en-only">Gigs</span>
         </a>
-        <a href="#booking">
-          <span data-i18n data-lang="zh">商演服務</span>
-          <span data-i18n data-lang="en">Booking</span>
+        <a href="#services">
+          <span class="zh-only">商演/婚禮</span>
+          <span class="en-only">Booking</span>
         </a>
         <a href="#team">
-          <span data-i18n data-lang="zh">團隊理念</span>
-          <span data-i18n data-lang="en">Team</span>
+          <span class="zh-only">團隊理念</span>
+          <span class="en-only">Team</span>
         </a>
         <a href="#contact">
-          <span data-i18n data-lang="zh">洽詢</span>
-          <span data-i18n data-lang="en">Contact</span>
+          <span class="zh-only">立即洽詢</span>
+          <span class="en-only">Contact</span>
         </a>
       </div>
-
-      <div class="nav-right">
-        <div class="lang-switch" aria-label="Language switch">
-          <button type="button" class="lang-btn is-active" data-lang="zh">中文</button>
-          <button type="button" class="lang-btn" data-lang="en">EN</button>
+      
+      <div style="display: flex; align-items: center;">
+        <div class="lang-switch">
+          <div class="lang-btn active" id="btn-zh" onclick="setLang('zh-TW')">中</div>
+          <div class="lang-btn" id="btn-en" onclick="setLang('en')">EN</div>
         </div>
-
-        <div class="nav-socials">
-          <a href="https://www.instagram.com/milespace_jazz/" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100095551352360" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
-        </div>
-
-        <a class="btn btn-line" href="https://line.me/ti/p/aOCp9yqeqG" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-line"></i> LINE
+        <a href="https://line.me/ti/p/aOCp9yqeqG" class="btn btn-gold" style="padding: 8px 20px; font-size: 0.8rem;">
+            <span class="zh-only">商務預約</span>
+            <span class="en-only">Booking</span>
         </a>
       </div>
     </div>
-  </div>
+  </nav>
+
+  <a href="https://line.me/ti/p/aOCp9yqeqG" class="float-line" target="_blank" aria-label="Line Contact"><i class="fa-brands fa-line"></i></a>
 
   <header>
-    <div class="container">
-      <div class="hero-grid">
-        <div>
-          <div class="kicker fade-up">
-            <i class="fa-solid fa-music"></i>
-            <span data-i18n data-lang="zh">台中爵士現場 × 商演 / 婚禮 / 包場 / 企業活動</span>
-            <span data-i18n data-lang="en">Taichung Live Jazz × Events / Weddings / Private Parties / Corporate</span>
-          </div>
+    <div class="container hero-grid">
+      <div class="hero-content reveal active">
+        <p class="hero-kicker">TAICHUNG LIVE JAZZ · WEDDING · EVENTS</p>
+        <h1 class="hero-title">
+          <span class="zh-only">MileSpace<br>爵士現場策劃與活動音樂整合</span>
+          <span class="en-only">MileSpace<br>Live Jazz Curation & Event Music Design</span>
+        </h1>
+        <p class="hero-desc">
+          <span class="zh-only">台中必訪的爵士音樂地標。不論是觀光遊客尋找夜晚微醺時光，或是新人與品牌需要專業婚禮樂團與商演策劃，我們以大樂團級別的整合技術，為您打造極致的感官體驗。</span>
+          <span class="en-only">A must-visit Jazz landmark in Taichung. Whether you're a tourist seeking a refined nightlife or a professional planning a corporate gala or wedding, we provide top-tier music production for unforgettable experiences.</span>
+        </p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;" class="desktop-left">
+          <a href="#events" class="btn btn-gold">
+            <span class="zh-only">探索台中爵士現場</span>
+            <span class="en-only">Explore Live Gigs</span>
+          </a>
+          <a href="https://linktr.ee/milespace.jazz" target="_blank" class="btn btn-outline" style="border-color: var(--accent); color: var(--accent);">
+            <i class="fa-solid fa-ticket"></i>
+            <span class="zh-only">線上購票 / 入口</span>
+            <span class="en-only">Tickets & Entry</span>
+          </a>
+        </div>
+      </div>
 
-          <h1 class="hero-title fade-up delay-1">
-            <span class="hero-line1">MileSpace</span>
-            <span class="hero-line2">
-              <span data-i18n data-lang="zh">爵士現場策劃與活動音樂整合</span>
-              <span data-i18n data-lang="en">Live Jazz Booking & Event Music Design</span>
-            </span>
-          </h1>
-
-          <p class="hero-desc fade-up delay-2">
-            <span data-i18n data-lang="zh">
-              我們專注於現場爵士演出與活動音樂整合。從小編制氛圍爵士到完整大樂團，
-              以專業流程與技術執行，為每一場活動打造有品味、有層次的聲音體驗。
-            </span>
-            <span data-i18n data-lang="en">
-              We provide live jazz performances and event music planning—from intimate combos to full big bands.
-              With a professional workflow and reliable production partners, we create a tasteful, layered sound experience for every event.
-            </span>
-          </p>
-
-          <div class="cta-row fade-up delay-3">
-            <a class="btn btn-primary" href="#events">
-              <i class="fa-solid fa-calendar-days"></i>
-              <span data-i18n data-lang="zh">查看演出行程</span>
-              <span data-i18n data-lang="en">View Schedule</span>
-            </a>
-            <a class="btn btn-ghost" href="#contact">
-              <i class="fa-solid fa-handshake"></i>
-              <span data-i18n data-lang="zh">商演服務</span>
-              <span data-i18n data-lang="en">Booking Inquiry</span>
-            </a>
-          </div>
-
-          <div class="trust-row fade-up delay-3">
-            <div class="pill">
-              <i class="fa-solid fa-sliders"></i>
-              <span data-i18n data-lang="zh">編制客製 2–18 人</span>
-              <span data-i18n data-lang="en">Flexible lineup: 2–18 musicians</span>
-            </div>
-            <div class="pill">
-              <i class="fa-solid fa-headphones-simple"></i>
-              <span data-i18n data-lang="zh">配合專業音控公司</span>
-              <span data-i18n data-lang="en">Works with pro sound engineers</span>
-            </div>
-            <div class="pill">
-              <i class="fa-solid fa-clipboard-check"></i>
-              <span data-i18n data-lang="zh">Stage Plot / Rider</span>
-              <span data-i18n data-lang="en">Stage Plot / Technical Rider</span>
+      <div class="hero-visual reveal active" style="transition-delay: 0.2s;">
+        <div class="carousel" id="heroCarousel">
+          <div class="carousel-slide is-active"><img src="https://i.imgur.com/FH7qgm1.jpeg" alt="MileSpace 台中爵士樂團現場演出"></div>
+          <div class="carousel-slide"><img src="https://i.imgur.com/GaM7uiE.jpeg" alt="台中爵士音樂節級別演出照片"></div>
+          <div class="carousel-slide"><img src="https://i.imgur.com/xhuLutw.jpeg" alt="MileSpace 商業活動策劃現場"></div>
+          <div class="carousel-slide"><img src="https://i.imgur.com/YzD6DAV.jpeg" alt="台中必去爵士吧氛圍體驗"></div>
+          <div class="carousel-slide"><img src="https://i.imgur.com/jMthoiU.jpeg" alt="專業婚禮樂團推薦演出照片"></div>
+          <div class="carousel-slide"><img src="https://i.imgur.com/95P1BpM.jpeg" alt="MileSpace 爵士現場 6"></div>
+          <div class="carousel-slide"><img src="https://i.imgur.com/BvlyTfD.jpeg" alt="MileSpace 爵士現場 7"></div>
+          <div class="carousel-slide"><img src="https://i.imgur.com/73ATpIS.jpeg" alt="MileSpace 爵士現場 8"></div>
+          <div class="carousel-overlay"></div>
+          
+          <div class="carousel-ui">
+            <div class="carousel-dots"></div>
+            <div style="display: flex; gap: 8px;">
+              <button class="cbtn" id="prevBtn" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="cbtn" id="nextBtn" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
           </div>
         </div>
 
-        <div class="hero-visual fade-up delay-2" aria-label="MileSpace carousel">
-          <div class="carousel" id="heroCarousel">
-            <div class="carousel-track">
-              <div class="carousel-slide is-active"><img src="https://i.imgur.com/FH7qgm1.jpeg" alt="Photo 1"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/GaM7uiE.jpeg" alt="Photo 2"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/xhuLutw.jpeg" alt="Photo 3"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/YzD6DAV.jpeg" alt="Photo 4"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/jMthoiU.jpeg" alt="Photo 5"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/95P1BpM.jpeg" alt="Photo 6"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/BvlyTfD.jpeg" alt="Photo 7"></div>
-              <div class="carousel-slide"><img src="https://i.imgur.com/73ATpIS.jpeg" alt="Photo 8"></div>
-            </div>
-
-            <div class="carousel-overlay" aria-hidden="true"></div>
-
-            <div class="carousel-ui">
-              <div class="carousel-dots" aria-label="carousel dots"></div>
-              <div class="carousel-btns">
-                <button class="cbtn" type="button" data-prev aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="cbtn" type="button" data-next aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="visual-card">
-            <div class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-            <div>
-              <h4>
-                <span data-i18n data-lang="zh">把音樂做成氣氛，把活動做成記憶</span>
-                <span data-i18n data-lang="en">Turn music into atmosphere, and events into memories</span>
-              </h4>
-              <p>
-                <span data-i18n data-lang="zh">從曲目、流程到現場控場，讓主辦方省心、觀眾有感。</span>
-                <span data-i18n data-lang="en">From setlist and flow to on-site coordination—stress-free for hosts, unforgettable for guests.</span>
-              </p>
-            </div>
+        <div class="visual-card">
+          <div class="icon" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <div>
+            <h4>
+                <span class="zh-only">活動公關與遊客的首選</span>
+                <span class="en-only">The Top Choice for Events & Tourists</span>
+            </h4>
+            <p>
+                <span class="zh-only">從曲目、流程到專業音控，為您複製爵士音樂節的感動。</span>
+                <span class="en-only">From setlist to professional sound, recreating the festival vibe.</span>
+            </p>
           </div>
         </div>
-
       </div>
     </div>
   </header>
 
-  <section id="about">
+  <!-- ✅ 活動行程與購票入口 - 針對遊客設計 -->
+  <section id="events" class="section-events">
     <div class="container">
-      <div class="section-head">
-        <div class="eyebrow"><i class="fa-solid fa-compact-disc"></i> About MileSpace</div>
-        <h2>
-          <span data-i18n data-lang="zh">品牌定位</span>
-          <span data-i18n data-lang="en">About</span>
-        </h2>
+      <div class="section-head reveal">
+        <h2>Live Gig Schedule</h2>
         <p>
-          <span data-i18n data-lang="zh">
-            在 Milespace，每一場演出的距離，都正好是一個音符的呼吸。讓爵士走出唱片機，進入城市的深夜裡。
-          </span>
-          <span data-i18n data-lang="en">
-            MileSpace blends live jazz, event planning, and a vibrant music community. We tailor the right lineup, setlist, and on-site flow so music naturally becomes part of your event.
-          </span>
+            <span class="zh-only">近期演出與台中必訪活動行程</span>
+            <span class="en-only">Taichung Must-Visit Live Schedule</span>
         </p>
       </div>
 
-      <div class="grid">
-        <div class="card col-4">
-          <div class="inner">
-            <div class="top">
-              <div class="badge-icon"><i class="fa-solid fa-microphone-lines"></i></div>
-              <h3>
-                <span data-i18n data-lang="zh">固定爵士現場</span>
-                <span data-i18n data-lang="en">Regular Live Jazz</span>
-              </h3>
-            </div>
-            <p>
-              <span data-i18n data-lang="zh">定期主題企劃、現場演出與合作活動，打造城市裡的音樂角落。</span>
-              <span data-i18n data-lang="en">Curated live nights and collaborations—your hidden music corner in Taichung.</span>
-            </p>
-            <div class="list">
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">主題音樂夜 / 合作演出</span>
-                <span data-i18n data-lang="en">Curated theme nights & collaborations</span>
-              </span></div>
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">樂手媒合與社群交流</span>
-                <span data-i18n data-lang="en">Musician network & community</span>
-              </span></div>
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">內容與活動導流整合</span>
-                <span data-i18n data-lang="en">Content & event traffic integration</span>
-              </span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card col-4">
-          <div class="inner">
-            <div class="top">
-              <div class="badge-icon"><i class="fa-solid fa-briefcase"></i></div>
-              <h3>
-                <span data-i18n data-lang="zh">商演與包場</span>
-                <span data-i18n data-lang="en">Events & Private Booking</span>
-              </h3>
-            </div>
-            <p>
-              <span data-i18n data-lang="zh">婚禮、開幕、企業活動、品牌發表等，提供一站式演出規劃。</span>
-              <span data-i18n data-lang="en">Weddings, openings, corporate events, launches—one-stop music planning and performance.</span>
-            </p>
-            <div class="list">
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">編制 / 曲目依需求客製</span>
-                <span data-i18n data-lang="en">Custom lineup & setlist</span>
-              </span></div>
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">流程控管與現場控場</span>
-                <span data-i18n data-lang="en">Flow control & on-site coordination</span>
-              </span></div>
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">可搭配主持、歌手、音控</span>
-                <span data-i18n data-lang="en">Optional MC, vocalists, sound engineers</span>
-              </span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card col-4">
-          <div class="inner">
-            <div class="top">
-              <div class="badge-icon"><i class="fa-solid fa-sliders"></i></div>
-              <h3>
-                <span data-i18n data-lang="zh">專業技術整合</span>
-                <span data-i18n data-lang="en">Production Integration</span>
-              </h3>
-            </div>
-            <p>
-              <span data-i18n data-lang="zh">配合專業音控公司與技術團隊，讓聲音與舞台呈現穩定可控。</span>
-              <span data-i18n data-lang="en">We partner with professional production teams to ensure stable, controlled sound and stage execution.</span>
-            </p>
-            <div class="list">
-              <div><i class="fa-solid fa-check"></i><span>Technical Rider / Stage Plot</span></div>
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">音量、動線、節目節奏設計</span>
-                <span data-i18n data-lang="en">Volume strategy, movement flow, program pacing</span>
-              </span></div>
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">現場溝通與執行協調</span>
-                <span data-i18n data-lang="en">On-site communication & coordination</span>
-              </span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="events">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow"><i class="fa-solid fa-calendar"></i> Events</div>
-        <h2>
-          <span data-i18n data-lang="zh">近期活動行程</span>
-          <span data-i18n data-lang="en">Upcoming Schedule</span>
-        </h2>
-        <p>
-          <span data-i18n data-lang="zh">同步更新 Google 行事曆。下方會自動抓取近期活動，並以卡片方式呈現。</span>
-          <span data-i18n data-lang="en">Synced with Google Calendar. Upcoming events are automatically displayed as cards below.</span>
-        </p>
-      </div>
-
-      <!-- Calendar Embed -->
-      <div class="calendar-wrapper">
-        <div class="calendar-container">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?src=12e1215dc9c046261a270c6c7c4ad1ba28787f4acf3fbb5e52b615f529591b6b%40group.calendar.google.com&ctz=Asia%2FTaipei&mode=MONTH&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=1"
-            frameborder="0"
-            scrolling="no">
-          </iframe>
-        </div>
-      </div>
-
-      <!-- ✅ API Cards -->
-      <div class="events-shell" id="eventsShell" aria-label="Upcoming events cards">
+      <div class="events-shell reveal">
         <div class="events-toolbar">
-          <div class="left">
-            <div class="events-pill">
-              <i class="fa-solid fa-bolt"></i>
-              <span data-i18n data-lang="zh">自動更新活動卡片</span>
-              <span data-i18n data-lang="en">Auto-updated Event Cards</span>
-            </div>
-            <div class="events-pill">
-              <i class="fa-solid fa-layer-group"></i>
-              <span data-i18n data-lang="zh">顯示近 12 筆</span>
-              <span data-i18n data-lang="en">Showing latest 12</span>
-            </div>
+          <div style="display: flex; align-items: center; gap: 12px; font-size: 0.95rem;">
+            <i class="fa-solid fa-calendar-day" style="color: var(--accent);" aria-hidden="true"></i>
+            <span id="eventsStatus">正在為遊客同步台中最新爵士行程...</span>
           </div>
-          <div class="status" id="eventsStatus">Loading…</div>
-        </div>
-
-        <div class="events-grid" id="eventsGrid">
-          <div class="events-empty">Loading…</div>
-        </div>
-      </div>
-
-      <div style="margin-top:40px;">
-        <div class="cta">
-          <div class="row">
-            <div>
-              <h3>
-                <span data-i18n data-lang="zh">更多連結與活動詳細資訊</span>
-                <span data-i18n data-lang="en">More links & details</span>
-              </h3>
-              <p>
-                <span data-i18n data-lang="zh">若您想購票訂位或瞭解更多，請點擊右側 Linktree。</span>
-                <span data-i18n data-lang="en">For full links, past work, and details, visit our Linktree.</span>
-              </p>
-            </div>
-            <a class="btn btn-ghost" href="https://linktr.ee/milespace.jazz" target="_blank" rel="noreferrer">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              <span data-i18n data-lang="zh">前往 Linktree</span>
-              <span data-i18n data-lang="en">Open Linktree</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="booking">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow"><i class="fa-solid fa-handshake"></i> Booking</div>
-        <h2>
-          <span data-i18n data-lang="zh">商演 / 活動服務</span>
-          <span data-i18n data-lang="en">Booking Services</span>
-        </h2>
-        <p>
-          <span data-i18n data-lang="zh">從小編制氛圍爵士到 12–18 人 Big Band，確保活動現場呈現穩定、精準、有質感。</span>
-          <span data-i18n data-lang="en">From intimate combos to 12–18 piece big bands—stable, precise, and tasteful for your event.</span>
-        </p>
-      </div>
-
-      <div class="grid">
-        <div class="card col-4">
-          <div class="inner">
-            <div class="top">
-              <div class="badge-icon"><i class="fa-solid fa-martini-glass-citrus"></i></div>
-              <h3>
-                <span data-i18n data-lang="zh">小編制氛圍爵士（2–4 人）</span>
-                <span data-i18n data-lang="en">Atmosphere Jazz (2–4)</span>
-              </h3>
-            </div>
-            <p>
-              <span data-i18n data-lang="zh">適合：酒會、餐廳、品牌活動。音量與氣氛細膩，讓交流更舒服。</span>
-              <span data-i18n data-lang="en">Ideal for receptions, restaurants, and brand events—subtle volume and elegant vibe.</span>
-            </p>
-            <div class="list">
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">適合室內空間與近距離互動</span>
-                <span data-i18n data-lang="en">Great for indoor spaces & close interaction</span>
-              </span></div>
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">可選 Swing / Bossa / Standard</span>
-                <span data-i18n data-lang="en">Swing / Bossa / Standards available</span>
-              </span></div>
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">配合專業音控公司</span>
-                <span data-i18n data-lang="en">Works with pro sound engineers</span>
-              </span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card col-4">
-          <div class="inner">
-            <div class="top">
-              <div class="badge-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
-              <h3>
-                <span data-i18n data-lang="zh">標準爵士樂團（5–7 人）</span>
-                <span data-i18n data-lang="en">Standard Jazz Band (5–7)</span>
-              </h3>
-            </div>
-            <p>
-              <span data-i18n data-lang="zh">適合：開幕、婚禮迎賓、主題派對。層次完整，音樂成為活動亮點。</span>
-              <span data-i18n data-lang="en">For openings, weddings, and theme parties—full sound and a true highlight.</span>
-            </p>
-            <div class="list">
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">可搭配歌手 / 主持 / 互動</span>
-                <span data-i18n data-lang="en">Optional vocalist / MC / interaction</span>
-              </span></div>
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">設計客製化歌單</span>
-                <span data-i18n data-lang="en">Custom setlist design</span>
-              </span></div>
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">配合專業音控公司</span>
-                <span data-i18n data-lang="en">Works with pro sound engineers</span>
-              </span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card col-4">
-          <div class="inner">
-            <div class="top">
-              <div class="badge-icon"><i class="fa-solid fa-music"></i></div>
-              <h3>
-                <span data-i18n data-lang="zh">爵士大樂團 Big Band（12–18 人）</span>
-                <span data-i18n data-lang="en">Big Band (12–18)</span>
-              </h3>
-            </div>
-            <p>
-              <span data-i18n data-lang="zh">適合：大型舞台、節慶、市集、企業晚會。舞台效果強、氣勢完整。</span>
-              <span data-i18n data-lang="en">Best for festivals, large stages, and corporate galas—powerful and impressive.</span>
-            </p>
-            <div class="list">
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">視覺與聲音震撼，適合大空間</span>
-                <span data-i18n data-lang="en">Impactful sound & visuals for big venues</span>
-              </span></div>
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">規劃完整主題演出節目</span>
-                <span data-i18n data-lang="en">Full themed program available</span>
-              </span></div>
-              <div><i class="fa-solid fa-check"></i><span>
-                <span data-i18n data-lang="zh">配合專業音控公司</span>
-                <span data-i18n data-lang="en">Works with pro sound engineers</span>
-              </span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="team">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow"><i class="fa-solid fa-shield-heart"></i> Trust</div>
-        <h2>
-          <span data-i18n data-lang="zh">團隊與理念</span>
-          <span data-i18n data-lang="en">Team & Philosophy</span>
-        </h2>
-        <p>
-          <span data-i18n data-lang="zh">我們用流程與專業技術整合，把不確定性降到最低，讓主辦方放心、觀眾有感。</span>
-          <span data-i18n data-lang="en">We reduce uncertainty with clear workflow and production integration—peace of mind for hosts, great experience for guests.</span>
-        </p>
-      </div>
-
-      <div class="two-col">
-        <!-- Leader -->
-        <div class="card team-card">
-          <div class="leader-grid">
-            <div class="leader-photo">
-              <img src="https://i.imgur.com/QhAk8M4.jpeg" alt="Easen Tu">
-            </div>
-            <div>
-              <div class="leader-head">
-                <div>
-                  <h3>
-                    <span data-i18n data-lang="zh">策劃人 / 薩克斯風手</span>
-                    <span data-i18n data-lang="en">Founder / Saxophonist</span>
-                  </h3>
-                  <div class="leader-sub">
-                    <span style="color:var(--text); font-weight:800;">凃譯翔（Easen Tu）</span>
-                  </div>
-                </div>
-                <div class="tagpill" title="Live Jazz">
-                  <i class="fa-solid fa-saxophone"></i>
-                  <span data-i18n data-lang="zh">現場爵士</span>
-                  <span data-i18n data-lang="en">Live Jazz</span>
-                </div>
-              </div>
-
-              <p class="leader-desc">
-                <span data-i18n data-lang="zh">
-                  專注於「把音樂做成氣氛、把活動做成記憶」。服務內容不只演奏，而是用專業流程完成活動音樂設計：依場地與來賓互動需求規劃編制，設計歌單與節奏，並協調音控與舞台執行，確保每個段落都準確落點。
-                  無論是婚禮迎賓、酒會、開幕、品牌發表或企業晚宴，MileSpace 都能提供穩定、具美感且可控的現場呈現，讓活動主軸更清晰，現場氛圍更有品味。
-                </span>
-                <span data-i18n data-lang="en">
-                  We turn music into atmosphere and events into memories.
-                  Beyond performance, we design live music through a clear professional workflow—tailoring the lineup, setlist, and pacing to the venue and audience, while coordinating sound and stage execution.
-                  From weddings and cocktail parties to brand launches and corporate events, MileSpace delivers a refined, reliable live experience that elevates the atmosphere and keeps every moment on point.
-                </span>
-              </p>
-
-              <div class="leader-tags">
-                <div class="tagpill"><i class="fa-solid fa-clipboard-check"></i>
-                  <span data-i18n data-lang="zh">流程控管</span><span data-i18n data-lang="en">Workflow</span>
-                </div>
-                <div class="tagpill"><i class="fa-solid fa-headphones-simple"></i>
-                  <span data-i18n data-lang="zh">音樂整合</span><span data-i18n data-lang="en">Music Design</span>
-                </div>
-                <div class="tagpill"><i class="fa-solid fa-music"></i>
-                  <span data-i18n data-lang="zh">編制客製</span><span data-i18n data-lang="en">Custom Lineup</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Methods -->
-        <div class="card team-card">
-          <div class="top">
-            <div class="badge-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-            <div>
-              <h3 class="methods-title">
-                <span data-i18n data-lang="zh">MileSpace 的方法論</span>
-                <span data-i18n data-lang="en">How We Work</span>
-              </h3>
-              <div class="methods-desc">
-                <span data-i18n data-lang="zh">讓活動更好聽、更好看、更順。</span>
-                <span data-i18n data-lang="en">Make it smoother, better sounding, and more memorable.</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="list">
-            <div><i class="fa-solid fa-check"></i><span>
-              <span data-i18n data-lang="zh"><b>對齊目標</b>：先定策略再定曲目。</span>
-              <span data-i18n data-lang="en"><b>Align goals</b>: decide strategy before the setlist.</span>
-            </span></div>
-            <div><i class="fa-solid fa-check"></i><span>
-              <span data-i18n data-lang="zh"><b>流程清楚</b>：事前溝通，降低風險。</span>
-              <span data-i18n data-lang="en"><b>Clear workflow</b>: pre-event communication reduces risk.</span>
-            </span></div>
-            <div><i class="fa-solid fa-check"></i><span>
-              <span data-i18n data-lang="zh"><b>技術整合</b>：確保現場聲音品質。</span>
-              <span data-i18n data-lang="en"><b>Production integration</b>: consistent sound quality on-site.</span>
-            </span></div>
-            <div><i class="fa-solid fa-check"></i><span>
-              <span data-i18n data-lang="zh"><b>品質穩定</b>：穩定輸出、可預期。</span>
-              <span data-i18n data-lang="en"><b>Reliable quality</b>: consistent delivery you can trust.</span>
-            </span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <div class="cta">
-        <div class="row">
-          <div>
-            <h3>
-              <span data-i18n data-lang="zh">開始您的音樂策劃</span>
-              <span data-i18n data-lang="en">Start your booking</span>
-            </h3>
-            <p>
-              <span data-i18n data-lang="zh">填寫需求表，我們將提供最合適的編制建議與報價。</span>
-              <span data-i18n data-lang="en">Fill out the form and we’ll suggest the best lineup and quote for your event.</span>
-            </p>
-          </div>
-          <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfcUfg9WLu_Mn2o1x87iiilryxr3m1b9aDPEKt6cPB4tm73Ww/viewform" target="_blank" rel="noreferrer">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <span data-i18n data-lang="zh">立即填寫需求表</span>
-            <span data-i18n data-lang="en">Open Inquiry Form</span>
+          <!-- 強化此處按鈕 -->
+          <a href="https://linktr.ee/milespace.jazz" target="_blank" class="btn btn-gold" style="padding: 8px 18px; font-size: 0.85rem;">
+            <i class="fa-solid fa-ticket"></i>
+            <span class="zh-only">前往購票 / 預約訂位</span>
+            <span class="en-only">Get Tickets / Bookings</span>
           </a>
         </div>
+        <div id="eventsGrid" class="events-grid"></div>
+      </div>
+
+      <!-- ✅ 購票引導 CTA 區塊 -->
+      <div class="linktree-cta reveal">
+        <h3>
+            <span class="zh-only">想在台中體驗最純正的爵士夜晚？</span>
+            <span class="en-only">Experience Real Jazz Nightlife in Taichung</span>
+        </h3>
+        <p>
+            <span class="zh-only">不論您是遊客或在地爵士樂迷，線上購票、訂位、以及所有活動詳細資訊，請點擊下方按鈕。</span>
+            <span class="en-only">Whether you're a visitor or a local jazz enthusiast, all ticketing and details are right here.</span>
+        </p>
+        <a href="https://linktr.ee/milespace.jazz" target="_blank" class="btn btn-gold btn-ticket">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span class="zh-only">進入 MileSpace Linktree 入口</span>
+            <span class="en-only">Open MileSpace Linktree Portal</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <footer>
+  <!-- ✅ 產品服務 - 針對商演與婚禮客戶設計 -->
+  <section id="services" class="section-services">
     <div class="container">
-      <div style="display:flex; align-items:center; justify-content:center; gap:10px;">
-        <img class="footer-logo" src="https://i.imgur.com/lFKDTnf.png" alt="MileSpace Logo">
-        <div style="font-family:'Playfair Display',serif; letter-spacing:.06em; font-size:1.05rem; color:var(--text);">MileSpace</div>
+      <div class="section-head reveal">
+        <h2 style="font-size: 2.2rem;">Our Professional Services</h2>
+        <p>
+            <span class="zh-only">專業商演、婚禮策劃與企業活動整合</span>
+            <span class="en-only">Corporate, Wedding & Event Music Production</span>
+        </p>
       </div>
-      <div style="margin-top:8px;">© 2025 MileSpace Jazz. All Rights Reserved.</div>
+      <div class="service-grid">
+        <!-- 服務 1: 商演 -->
+        <article class="service-card reveal">
+          <i class="fa-solid fa-microphone-lines service-icon" aria-hidden="true"></i>
+          <h3>
+              <span class="zh-only">企業商演樂團推薦</span>
+              <span class="en-only">Corporate Event Bands</span>
+          </h3>
+          <p>
+              <span class="zh-only">公關活動、品牌發表、企業晚宴首選。提供 12–18 人大樂團 (Big Band) 震撼編制，確保現場穩定、具國際質感的呈現。</span>
+              <span class="en-only">Top choice for PR, brand launches, and galas. Providing powerful Big Band ensembles ensuring stable, world-class production.</span>
+          </p>
+          <div class="service-list">
+            <div><i class="fa-solid fa-circle" aria-hidden="true"></i> <span>
+                <span class="zh-only">針對品牌調性客製曲目</span>
+                <span class="en-only">Custom setlists aligned with brand vibe</span>
+            </span></div>
+            <div><i class="fa-solid fa-circle" aria-hidden="true"></i> <span>
+                <span class="zh-only">專業 Technical Rider 團隊對接</span>
+                <span class="en-only">Coordination with professional Tech Riders</span>
+            </span></div>
+          </div>
+        </article>
+        <!-- 服務 2: 婚禮 -->
+        <article class="service-card reveal" style="transition-delay: 0.1s;">
+          <i class="fa-solid fa-heart service-icon" aria-hidden="true"></i>
+          <h3>
+              <span class="zh-only">專業婚禮樂團策劃</span>
+              <span class="en-only">Professional Wedding Bands</span>
+          </h3>
+          <p>
+              <span class="zh-only">婚禮氛圍大師。從證婚、迎賓到午宴餐期，為您一生一次的瞬間提供優雅且具記憶點的現場音樂設計。</span>
+              <span class="en-only">Masters of wedding atmosphere. Providing elegant live music for ceremony, reception, and dining for your special moment.</span>
+          </p>
+          <div class="service-list">
+            <div><i class="fa-solid fa-circle" aria-hidden="true"></i> <span>
+                <span class="zh-only">可搭配專業歌手與婚禮主持</span>
+                <span class="en-only">Optional vocalists and MCs</span>
+            </span></div>
+            <div><i class="fa-solid fa-circle" aria-hidden="true"></i> <span>
+                <span class="zh-only">精準音量策略，提升交流質感</span>
+                <span class="en-only">Precise volume control for better conversation</span>
+            </span></div>
+          </div>
+        </article>
+        <!-- 服務 3: 遊客/品酒 -->
+        <article class="service-card reveal" style="transition-delay: 0.2s;">
+          <i class="fa-solid fa-wine-glass service-icon" aria-hidden="true"></i>
+          <h3>
+              <span class="zh-only">台中必去：爵士品酒策劃</span>
+              <span class="en-only">Jazz & Wine Experiences</span>
+          </h3>
+          <p>
+              <span class="zh-only">結合台中夜生活地圖，為 VIP 包場或私人聚會提供「以酒入曲」的導聆體驗，感受台中夜晚最優雅的深度旅遊。</span>
+              <span class="en-only">Part of Taichung's nightlife guide. Providing immersive "Music & Wine" experiences for private parties and VIP tastings.</span>
+          </p>
+          <div class="service-list">
+            <div><i class="fa-solid fa-circle" aria-hidden="true"></i> <span>
+                <span class="zh-only">侍酒專業與爵士樂理跨界整合</span>
+                <span class="en-only">Fusion of Sommelier expertise & Jazz theory</span>
+            </span></div>
+            <div><i class="fa-solid fa-circle" aria-hidden="true"></i> <span>
+                <span class="zh-only">沉浸式場域氣氛設計</span>
+                <span class="en-only">Immersive atmospheric design</span>
+            </span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="section-team">
+    <div class="container">
+      <div class="team-box reveal">
+        <div class="team-photo">
+          <img src="https://i.imgur.com/QhAk8M4.jpeg" alt="MileSpace 策劃人 凃譯翔 Easen Tu - 台中爵士樂團專家">
+        </div>
+        <div class="team-content">
+          <h3>
+              <span class="zh-only">凃譯翔</span>
+              <span class="en-only">Easen Tu</span>
+          </h3>
+          <span class="title">
+              MileSpace 
+              <span class="zh-only">策劃人 / 薩克斯風手</span>
+              <span class="en-only">Founder / Saxophonist</span>
+          </span>
+          <p style="color: var(--muted); white-space: pre-line; margin-bottom: 20px;">
+            <span class="zh-only">專注於「把音樂做成氣氛、把活動做成記憶」。無論是為商務客戶執行精準的流程控管，或是為台中遊客打造難忘的夜晚，MileSpace 都能提供穩定且具備美感的現場呈現。我們不只是表演者，更是活動音樂的總體策劃師。</span>
+            <span class="en-only">Focusing on "Turning Music into Atmosphere, Events into Memories." Whether executing precise workflow for corporate clients or creating unforgettable nights for Taichung visitors, MileSpace delivers stable and aesthetic live productions.</span>
+          </p>
+          <div class="team-tags">
+            <span class="tag"><span class="zh-only">台中爵士樂團專家</span><span class="en-only">Taichung Jazz Expert</span></span>
+            <span class="tag"><span class="zh-only">商演流程控管</span><span class="en-only">Event Workflow</span></span>
+            <span class="tag"><span class="zh-only">專業婚禮樂團</span><span class="en-only">Wedding Band Pros</span></span>
+            <span class="tag"><span class="zh-only">音響技術整合</span><span class="en-only">Technical Integration</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding: 100px 0;">
+    <div class="container" style="text-align: center;">
+      <div style="background: rgba(255,255,255,0.02); padding: 60px 30px; border-radius: 40px; border: 1px solid var(--accent);">
+        <h2 style="font-size: 2rem; margin-bottom: 20px;">
+            <span class="zh-only">商務諮詢與預約</span>
+            <span class="en-only">Inquiry & Booking</span>
+        </h2>
+        <p style="color: var(--muted); margin-bottom: 35px; max-width: 550px; margin-inline: auto;">
+          <span class="zh-only">正在規劃企業活動、品牌發表或夢幻婚禮？填寫需求表，由 MileSpace 專業團隊為您量身打造音樂提案。</span>
+          <span class="en-only">Planning a corporate event or dream wedding? Fill out the form for a customized musical proposal by MileSpace.</span>
+        </p>
+        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcUfg9WLu_Mn2o1x87iiilryxr3m1b9aDPEKt6cPB4tm73Ww/viewform" class="btn btn-gold" target="_blank">
+            <span class="zh-only">填寫商演/婚禮需求表</span>
+            <span class="en-only">Inquiry Form</span>
+          </a>
+          <a href="https://line.me/ti/p/aOCp9yqeqG" class="btn btn-outline" target="_blank"><i class="fa-brands fa-line"></i> LINE 洽詢</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding: 60px 0 40px; border-top: 1px solid var(--line); text-align: center;">
+    <div class="container">
+      <div style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 10px;">MileSpace Jazz</div>
+      <p style="font-size: 0.8rem; color: var(--muted-low); margin-bottom: 30px;">
+          <span class="zh-only">台中必訪爵士現場 × 專業商演婚禮樂團 × 音樂策劃</span>
+          <span class="en-only">Taichung Must-Visit Live Jazz & Professional Event Band</span>
+      </p>
+      <div style="display: flex; justify-content: center; gap: 20px;">
+        <a href="https://www.instagram.com/milespace_jazz/" target="_blank" style="color: var(--muted);" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100095551352360" target="_blank" style="color: var(--muted);" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+      <p style="margin-top: 40px; font-size: 0.7rem; color: var(--muted-low);">© 2025 MileSpace Jazz. All Rights Reserved.</p>
     </div>
   </footer>
 
+  <!-- ✅ 強化版 JSON-LD 結構化數據 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "MileSpace Jazz",
+    "image": "https://i.imgur.com/FH7qgm1.jpeg",
+    "@id": "https://milespace-jazz.com/",
+    "url": "https://milespace-jazz.com/",
+    "telephone": "",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Taichung",
+      "addressRegion": "TW",
+      "postalCode": "",
+      "addressCountry": "TW"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 24.1477,
+      "longitude": 120.6736
+    },
+    "description": "專業台中爵士樂團與活動策劃服務。提供台中必去爵士酒吧體驗、婚禮樂團推薦、商演樂團與台中夜生活音樂行程指南。",
+    "servesCuisine": "",
+    "priceRange": "$$",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "18:00",
+      "closes": "23:00"
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100095551352360",
+      "https://www.instagram.com/milespace_jazz/",
+      "https://linktr.ee/milespace.jazz"
+    ]
+  }
+  </script>
+
   <script>
-    // ✅ Carousel
+    // --- 捲動動畫 ---
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // --- 語言切換邏輯 ---
+    function setLang(lang) {
+      document.body.setAttribute('lang', lang);
+      document.documentElement.setAttribute('lang', lang);
+      
+      const btnZh = document.getElementById('btn-zh');
+      const btnEn = document.getElementById('btn-en');
+      
+      if (lang === 'en') {
+        btnEn.classList.add('active');
+        btnZh.classList.remove('active');
+      } else {
+        btnZh.classList.add('active');
+        btnEn.classList.remove('active');
+      }
+      
+      fetchEvents(); 
+    }
+
+    // --- 照片輪播邏輯 ---
     (function(){
       const root = document.getElementById('heroCarousel');
-      if(!root) return;
-
       const slides = Array.from(root.querySelectorAll('.carousel-slide'));
       const dotsWrap = root.querySelector('.carousel-dots');
-      const prevBtn = root.querySelector('[data-prev]');
-      const nextBtn = root.querySelector('[data-next]');
-
       let index = 0;
       let timer = null;
-      const INTERVAL = 5000;
 
       slides.forEach((_, i) => {
         const d = document.createElement('span');
         d.className = 'dot' + (i === 0 ? ' is-active' : '');
-        d.style.cursor = 'pointer';
-        d.setAttribute('aria-label', 'Go to slide ' + (i + 1));
-        d.addEventListener('click', () => goTo(i, true));
+        d.addEventListener('click', () => goTo(i));
         dotsWrap.appendChild(d);
       });
       const dots = Array.from(dotsWrap.querySelectorAll('.dot'));
 
-      function setActive(i){
-        slides.forEach((s, si) => s.classList.toggle('is-active', si === i));
-        dots.forEach((d, di) => d.classList.toggle('is-active', di === i));
-        index = i;
+      function goTo(i) {
+        slides[index].classList.remove('is-active');
+        dots[index].classList.remove('is-active');
+        index = (i + slides.length) % slides.length;
+        slides[index].classList.add('is-active');
+        dots[index].classList.add('is-active');
       }
 
-      function goTo(newIndex, userAction){
-        const next = (newIndex + slides.length) % slides.length;
-        setActive(next);
-        if(userAction) restart();
-      }
+      document.getElementById('nextBtn').addEventListener('click', () => { goTo(index + 1); restart(); });
+      document.getElementById('prevBtn').addEventListener('click', () => { goTo(index - 1); restart(); });
 
-      function next(){ goTo(index + 1, true); }
-      function prev(){ goTo(index - 1, true); }
-
-      function start(){
-        stop();
-        timer = setInterval(() => goTo(index + 1, false), INTERVAL);
-      }
-      function stop(){
-        if(timer){ clearInterval(timer); timer = null; }
-      }
-      function restart(){ stop(); start(); }
-
-      if(nextBtn) nextBtn.addEventListener('click', next);
-      if(prevBtn) prevBtn.addEventListener('click', prev);
-
-      root.addEventListener('mouseenter', stop);
-      root.addEventListener('mouseleave', start);
-
-      let x0 = null;
-      root.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, {passive:true});
-      root.addEventListener('touchend', (e) => {
-        if(x0 === null) return;
-        const x1 = e.changedTouches[0].clientX;
-        const dx = x1 - x0;
-        if(Math.abs(dx) > 40){ dx < 0 ? next() : prev(); }
-        x0 = null;
-      }, {passive:true});
-
+      function start() { timer = setInterval(() => goTo(index + 1), 5000); }
+      function restart() { clearInterval(timer); start(); }
       start();
     })();
 
-    // ✅ Language toggle (ZH/EN)
-    (function(){
-      const btns = Array.from(document.querySelectorAll('.lang-btn'));
-      if(!btns.length) return;
-
-      const KEY = 'milespace_lang';
-      const saved = localStorage.getItem(KEY);
-
-      function apply(lang){
-        document.documentElement.setAttribute('lang', lang === 'en' ? 'en' : 'zh-TW');
-        btns.forEach(b => b.classList.toggle('is-active', b.dataset.lang === lang));
-        // refresh events texts without refetch
-        if(window.__msRefreshEventsUI) window.__msRefreshEventsUI();
-      }
-
-      if(saved === 'en' || saved === 'zh'){ apply(saved); }
-
-      btns.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const lang = btn.dataset.lang; // 'zh' | 'en'
-          localStorage.setItem(KEY, lang);
-          apply(lang);
-        });
-      });
-    })();
-
-    // ✅ Google Calendar API -> Event Cards
-    (function(){
-      // --- Your settings ---
-      const API_KEY = "AIzaSyCGilolzeDFtAUJ6xcZYg4PNxupQQh2kz4";
+    // --- Google Calendar API ---
+    async function fetchEvents() {
+      const API_KEY = "AIzaSyCGilolzeDFtAUJ6xcZYg4PNxupQQh2kz4"; 
       const CAL_ID  = "12e1215dc9c046261a270c6c7c4ad1ba28787f4acf3fbb5e52b615f529591b6b@group.calendar.google.com";
-      const TIMEZONE = "Asia/Taipei";
-      const MAX_RESULTS = 12;
-
-      const statusEl = document.getElementById("eventsStatus");
       const grid = document.getElementById("eventsGrid");
-      if(!statusEl || !grid) return;
+      const status = document.getElementById("eventsStatus");
+      const lang = document.body.getAttribute('lang') || 'zh-TW';
 
-      const UI = {
-        zh: {
-          loading: "讀取中…",
-          updated: "已更新",
-          empty: "近期沒有活動公告（或行事曆尚未公開）。",
-          error: "活動讀取失敗，請稍後再試。",
-          allDay: "全天",
-          details: "詳細",
-          location: "地點"
-        },
-        en: {
-          loading: "Loading…",
-          updated: "Updated",
-          empty: "No upcoming events (or the calendar is not public).",
-          error: "Failed to load events. Please try again later.",
-          allDay: "All day",
-          details: "Details",
-          location: "Location"
-        }
-      };
-
-      function getLang(){
-        return document.documentElement.getAttribute("lang") === "en" ? "en" : "zh";
-      }
-
-      function setStatusText(key){
-        const lang = getLang();
-        statusEl.textContent = UI[lang][key] || "";
-      }
-
-      function escapeHTML(str){
-        return String(str ?? "")
-          .replace(/&/g, "&amp;")
-          .replace(/</g, "&lt;")
-          .replace(/>/g, "&gt;")
-          .replace(/"/g, "&quot;")
-          .replace(/'/g, "&#039;");
-      }
-
-      function stripHTML(html){
-        const tmp = document.createElement("div");
-        tmp.innerHTML = String(html ?? "");
-        return (tmp.textContent || tmp.innerText || "").trim();
-      }
-
-      function renderEvents(items){
-        const lang = getLang();
-        grid.innerHTML = "";
-
-        if(!items || !items.length){
-          const empty = document.createElement("div");
-          empty.className = "events-empty";
-          empty.textContent = UI[lang].empty;
-          grid.appendChild(empty);
-          setStatusText("updated");
+      status.innerText = lang === 'en' ? "Syncing Taichung Live Schedule..." : "正在為您同步台中最新爵士行程...";
+      const timeMin = new Date().toISOString();
+      const url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(CAL_ID)}/events?key=${API_KEY}&timeMin=${timeMin}&singleEvents=true&orderBy=startTime&maxResults=9`;
+      
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+        if(!data.items || data.items.length === 0) {
+          grid.innerHTML = `<div style="grid-column:1/-1; padding:40px; text-align:center; color:var(--muted-low); border: 1px dashed var(--line); border-radius: 16px;">${lang === 'en' ? 'No upcoming gigs in Taichung. Contact us for private bookings!' : '台中近期暫無公開演出。商演/婚禮需求歡迎洽詢。'}</div>`;
+          status.innerText = lang === 'en' ? "Schedule Updated" : "行程已更新";
           return;
         }
-
-        items.forEach(evt => {
-          const title = escapeHTML(evt.summary || "(No title)");
-          const where = stripHTML(evt.location || "");
-          const desc = stripHTML(evt.description || "");
-
-          const startDT = evt.start && (evt.start.dateTime || evt.start.date);
-          const isAllDay = !!(evt.start && evt.start.date && !evt.start.dateTime);
-
-          let dow = "-";
-          let md = "-";
-          let timeLabel = "-";
-
-          if(startDT){
-            const d = isAllDay ? new Date(startDT + "T00:00:00") : new Date(startDT);
-
-            dow = d.toLocaleDateString(lang === "en" ? "en-US" : "zh-TW", {
-              weekday: "short",
-              timeZone: TIMEZONE
-            });
-
-            const month = d.toLocaleDateString(lang === "en" ? "en-US" : "zh-TW", {
-              month: "short",
-              timeZone: TIMEZONE
-            });
-            const day = d.toLocaleDateString(lang === "en" ? "en-US" : "zh-TW", {
-              day: "2-digit",
-              timeZone: TIMEZONE
-            });
-            md = `${month} ${day}`;
-
-            timeLabel = isAllDay
-              ? UI[lang].allDay
-              : d.toLocaleTimeString(lang === "en" ? "en-US" : "zh-TW", {
-                  hour: "2-digit",
-                  minute: "2-digit",
-                  hour12: (lang === "en"),
-                  timeZone: TIMEZONE
-                });
-          }
-
-          const link = evt.htmlLink || "";
-
-          const metaHTML = `
-            ${where ? `<div class="emeta"><i class="fa-solid fa-location-dot"></i><span>${escapeHTML(where)}</span></div>` : ``}
-            ${isAllDay ? `<div class="emeta"><i class="fa-regular fa-sun"></i><span>${escapeHTML(UI[lang].allDay)}</span></div>` : ``}
-          `;
-
+        grid.innerHTML = "";
+        data.items.forEach(evt => {
+          const start = new Date(evt.start.dateTime || evt.start.date);
           const card = document.createElement("div");
           card.className = "event-card";
+          const monthStr = start.toLocaleDateString(lang === 'en' ? 'en-US' : 'zh-TW', {month:'short'});
+          const weekdayStr = start.toLocaleDateString(lang === 'en' ? 'en-US' : 'zh-TW', {weekday:'short'});
+          const timeStr = start.toLocaleTimeString(lang === 'en' ? 'en-US' : 'zh-TW', {hour:'2-digit', minute:'2-digit', hour12: (lang==='en')});
+          
           card.innerHTML = `
             <div class="event-body">
-              <div class="event-rail">
-                <div class="event-date">
-                  <div class="dow">${escapeHTML(dow)}</div>
-                  <div class="md">${escapeHTML(md)}</div>
-                </div>
-                <div class="event-time">${escapeHTML(timeLabel)}</div>
+              <div class="date-badge">
+                <span class="day">${start.getDate()}</span>
+                <span class="month">${monthStr}</span>
               </div>
-
-              <div class="event-content">
-                <div class="event-title">${title}</div>
-
+              <div class="event-info">
+                <h3>${evt.summary || (lang === 'en' ? "Jazz Performance" : "台中爵士現場")}</h3>
                 <div class="event-meta">
-                  ${metaHTML}
+                  <span><i class="fa-regular fa-clock"></i> ${weekdayStr} ${timeStr}</span>
+                  ${evt.location ? `<span><i class="fa-solid fa-location-dot"></i> ${evt.location}</span>` : ""}
                 </div>
-
-                <div class="event-desc">${escapeHTML(desc || "")}</div>
               </div>
-            </div>
-
-            <div class="event-footer">
-              <div class="small">${where ? escapeHTML(UI[lang].location + ": " + where) : ""}</div>
-              ${link ? `<a class="event-link" href="${escapeHTML(link)}" target="_blank" rel="noreferrer">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> ${escapeHTML(UI[lang].details)}
-                </a>` : ``}
             </div>
           `;
-
           grid.appendChild(card);
         });
-
-        setStatusText("updated");
+        status.textContent = lang === 'en' ? "Live Sync Completed" : "台中現場行程已同步";
+      } catch (e) { 
+        status.textContent = lang === 'en' ? "Sync Error" : "同步連線錯誤"; 
       }
-
-      async function fetchEvents(){
-        setStatusText("loading");
-        grid.innerHTML = `<div class="events-empty">${UI[getLang()].loading}</div>`;
-
-        const timeMin = new Date().toISOString();
-
-        const params = new URLSearchParams({
-          key: API_KEY,
-          timeMin,
-          singleEvents: "true",
-          orderBy: "startTime",
-          maxResults: String(MAX_RESULTS),
-          timeZone: TIMEZONE
-        });
-
-        const url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(CAL_ID)}/events?${params.toString()}`;
-
-        try{
-          const res = await fetch(url);
-          const data = await res.json();
-
-          if(!res.ok){
-            throw new Error(data?.error?.message || "Request failed");
-          }
-
-          const items = (data.items || []).filter(it => it.status !== "cancelled");
-          renderEvents(items);
-        }catch(err){
-          console.error(err);
-          grid.innerHTML = `<div class="events-error">${UI[getLang()].error}</div>`;
-          setStatusText("error");
-        }
-      }
-
-      // allow lang toggle to re-render same items without refetch
-      let __cachedItems = null;
-      const origRender = renderEvents;
-      renderEvents = function(items){
-        __cachedItems = items;
-        origRender(items);
-      }
-      window.__msRefreshEventsUI = function(){
-        if(__cachedItems) origRender(__cachedItems);
-        else {
-          setStatusText("loading");
-          grid.innerHTML = `<div class="events-empty">${UI[getLang()].loading}</div>`;
-        }
-      };
-
-      fetchEvents();
-    })();
+    }
+    
+    window.onload = fetchEvents;
   </script>
 
 </body>
